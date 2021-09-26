@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap');
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,h2,p{
+  text-align:center;
+}
+h1{
+  font-weight:900;
+  font-size:100px;
+  color:#7e94a1;
+}
+h2{
+  font-size:50px;
+}
+p{
+  font-size:30px;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+ul{
+  list-style:none;
+}
+
+.nav{
+  display:flex;
+  justify-content:flex-end;
+  background-image:linear-gradient(80deg, #57788b, #7e94a1);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:3;
+}
+.nav-list{
+  display:flex;
+  font-size:30px;
+  margin:0px;
+  margin-right:20px;
+}
+
+.nav-list a {
+  display: block;
+  padding:20px;
+}
+.nav-list a:hover {
+  background:black;
+  color:white;
+}
+
+.about{
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+ height:100vh;
+  background-image:linear-gradient(20deg, #004999, #000c19);
+ 
+}
+.about p{
+  color:#000c19;
+}
+
+.contact{
+   display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+ height:100vh;
+  background-image:linear-gradient(20deg, #004999, #000c19);
+
+}
+.contact-details{
+  color:#7e94a1;
+}
+.contact-links{
+  display: flex;
+  justify-content:center;
+  padding:40px;
+  font-size:30px;
+  font-weight:900;
+  gap:50px;
+}
+#contact-title h2{
+  color: #7e94a1;
+  font-size:100px;
+}
+.btn{
+  padding:10px;
+  
+}
+.btn:hover{
+  animation:bounce 1s;
+}
+
+.project-section{
+  text-align:center;
+  padding: 50px;
+  background: #dbd5c7;
+}
+.projects-header{
+  padding:10px;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.project-img{
+  width:400px;
+  height:200px;
+  justify-content:center;
+}
+.project{
+  background-image:linear-gradient(20deg, #004999, #000c19);
+  padding:3px;
+  padding-top:5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+  display: inline-block;
+  position:relative;
+  vertical-align: middle;
+  -webkit-transform: translateZ(2);
+  transform: translateZ(2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.project:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index:1;
+}
+
+
+
+.btn-show-all {
+  font-size: 30px;
+  background-image:linear-gradient(80deg, #57788b, #7e94a1);
+  
+   display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact-details{
+  text-shadow: 1px 1px .5px #000c19;
+}
+
+@media (max-width:600px){
+  h1 {
+    font-size:50px;}
+  }
+@media (max-width:600px){
+  h2 {
+    font-size: 25px;
+  }
+}
+@media(max-width:600px){
+  #contact-title h2{
+    font-size:50px;
+  }
+}
+
+</style>
+
+<body>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li> <a href="#welcome-section">About</a></li>
+    <li> <a href="#projects">Projects</a></li>
+    <li> <a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="welcome-section" class="about">
+  <h1>Matt Seidel</h1>
+  <p>A new journey in programming<p>
+</section>
+
+
+<section id="projects" class="project-section">
+  
+  <h2 class="projects-header"> Check out some projects I've completed</h2>
+  
+  <div class="project-grid">
+    <a href="https://codepen.io/mseidel819/pen/MWoGBeK" target="_blank" class="project project-tile">
+      <img class="project-img" src="https://i.imgur.com/kZvg2Jk.png" alt="tribute page"/>
+      <p class="project-title">Tribute page</p>
+    </a>
+    
+    <a href="https://codepen.io/mseidel819/pen/ExXRKLa" target="_blank" class="project project-tile">
+      <img class="project-img" src="https://i.imgur.com/wCOVBu3.png" alt="Survey form"/>
+      <p class="project-title">Survey form</p>
+    </a>
+    
+    <a href="https://codepen.io/mseidel819/pen/rNwrKWZ" target="_blank" class="project project-tile">
+      <img class="project-img" src="https://i.imgur.com/r7MpcSY.png" alt="Landing page"/>
+      <p class="project-title">Landing page</p>
+    </a>
+    
+    <a href="https://codepen.io/mseidel819/pen/mdwGLVj" target="_blank" class="project project-tile">
+      <img class="project-img" src="https://i.imgur.com/oR5DpLm.png" alt="technical document"/>
+      <p class="project-title">Technical document</p>
+    </a>
+  </div>
+  
+      <a
+    href="https://codepen.io/mseidel819"
+    class="btn btn-show-all"
+    target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
+
+
+<section id="contact" class="contact">
+  <div id="contact-title">
+    <h2>Get in touch</h2>
+    <p>I look forward to being part of your team!</p>
+  </div>
+  <div class="contact-links">
+    
+    <a
+      id="profile-link"
+      href="https://github.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+   
+    <a href="mailto:mseidel819@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Email</a
+    >
+    <a href="tel:708-533-5779" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call</a
+    >
+  </div>
+</section>
+
+</body>
