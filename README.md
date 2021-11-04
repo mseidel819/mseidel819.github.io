@@ -1,3 +1,3 @@
 # mseidel819.github.io
 
-view my portfolio at: seidelmatt.com 
+view my portfolio at: https://seidelmatt.com/
