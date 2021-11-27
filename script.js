@@ -5,6 +5,7 @@ const nav = document.querySelector('.nav');
 const navLinks = document.querySelector('.nav-links');
 const navItem = document.querySelector('.nav-item');
 const navLink = document.querySelector('.nav-link');
+const navLogo = document.querySelector('.nav-logo');
 //button scrolling
 
 navLinks.addEventListener('click', function (e) {
@@ -16,6 +17,12 @@ navLinks.addEventListener('click', function (e) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
+});
+
+navLogo.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
 });
 
 //menu fade
