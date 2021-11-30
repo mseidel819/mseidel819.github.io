@@ -190,6 +190,9 @@ ul {
   height: 30rem;
   background-image: linear-gradient(20deg, #004999, #000c19);
 }
+.contact-content {
+  position: absolute;
+}
 
 .contact-details {
   color: #7e94a1;
