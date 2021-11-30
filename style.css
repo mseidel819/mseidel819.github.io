@@ -94,8 +94,25 @@ ul {
   height: 100vh;
   background-image: linear-gradient(20deg, #004999, #000c19);
 }
-.welcome p {
-  color: #85c0ff;
+.welcome h1 {
+  color: #7e94a1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome h1::after {
+  content: '';
+  background: #7e94a1;
+  display: block;
+  height: 3px;
+  width: 250px;
+  margin: 5px auto 5px;
+}
+.welcome h1 span {
+  position: absolute;
+  font-size: 20px;
+  top: -10%;
 }
 
 /* ABOUT ME */
@@ -207,7 +224,7 @@ ul {
 }
 .projects-header {
   padding: 10px;
-  margin-top: 50px;
+
   margin-bottom: 20px;
 }
 .project-grid {
@@ -264,8 +281,11 @@ ul {
 }
 
 @media (max-width: 1200px) {
-  h1 {
-    font-size: 50px;
+  .welcome h1 {
+    font-size: 80px;
+  }
+  .welcome h1 span {
+    font-size: 20px;
   }
 }
 @media (max-width: 1200px) {
