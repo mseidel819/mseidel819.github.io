@@ -108,6 +108,7 @@ blockquote p {
   background-image: linear-gradient(20deg, #004999, #000c19);
 }
 .welcome h1 {
+  width: 100%;
   color: #7e94a1;
   position: absolute;
   top: 50%;
@@ -124,8 +125,11 @@ blockquote p {
 }
 .welcome h1 span {
   position: absolute;
-  font-size: 20px;
+  font-size: 50px;
   top: -10%;
+}
+.welcome h1 {
+  font-size: 200px;
 }
 
 /* ABOUT ME */
@@ -304,10 +308,10 @@ blockquote p {
 
 @media (max-width: 1200px) {
   .welcome h1 {
-    font-size: 80px;
+    font-size: 150px;
   }
   .welcome h1 span {
-    font-size: 20px;
+    font-size: 50px;
   }
 }
 @media (max-width: 1200px) {
