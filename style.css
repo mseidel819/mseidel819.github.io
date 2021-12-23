@@ -1,3 +1,45 @@
+/*
+-- 01 typography system
+
+--FONT SIZES (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--font weights:
+default:400
+500
+600
+700
+--line heights:
+default:1
+small: 1.05
+paragraph default: 1.6
+
+--letter space:
+-.5px
+.75px
+
+
+-- 02 COLORS
+--primary: #3D5A80 #98C1D9 #E0FBFC #EE6C4D #293241
+--tints: 
+--shades: 
+--accents:
+--Greys: #555  #333 #6f6f6f
+
+--- 05 SHADOWS
+
+--- 06 border radius
+
+default: 
+
+-- 07 whitespace
+
+--SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap');
 
 @keyframes bounce {
@@ -22,10 +64,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #293241;
 }
 h1,
 h2,
@@ -33,32 +83,32 @@ p {
   text-align: center;
 }
 h1 {
-  font-weight: 900;
-  font-size: 100px;
-  color: #7e94a1;
+  font-weight: 700;
+  font-size: 10rem;
+  color: #293241;
 }
 h2 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 p {
-  font-size: 30px;
+  font-size: 3rem;
   color: #85c0ff;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #293241;
 }
 ul {
   list-style: none;
 }
 
 blockquote {
-  margin: 10px;
+  margin: 1rem;
   transform: skew(-5deg);
 }
 
 blockquote p {
-  padding: 15px;
+  padding: 1.5rem;
   background: #eee;
   border-radius: 5px;
   background-color: #dbd5c7;
@@ -66,35 +116,35 @@ blockquote p {
 }
 
 .nav {
-  /* display: flex;
-  justify-content: flex-end; */
-  background-image: linear-gradient(80deg, #57788b, #7e94a1);
+  display: flex;
+  justify-content: flex-end;
+  /* background-image: linear-gradient(80deg, #57788b, #7e94a1); */
+  background-color: rgba(224, 251, 252, 0.9);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
 }
-.nav-items {
-  display: flex;
-  justify-content: space-between;
-}
-.logo {
-  height: 80px;
-}
+
 .nav-links {
   display: flex;
-  font-size: 30px;
+  font-size: 3rem;
   margin: 0px;
   margin-right: 20px;
 }
 
-.nav-links a {
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
   display: block;
+  border-radius: 5px;
   padding: 20px;
+  transition: all 0.3s;
 }
-.nav-item a:hover {
-  background: black;
+.nav-link:hover,
+.nav-link:active {
+  background: #ee6c4d;
   color: white;
 }
 
@@ -105,24 +155,25 @@ blockquote p {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(20deg, #004999, #000c19);
+  background-image: linear-gradient(to bottom, #3d5a80, rgba(224, 251, 252));
 }
-.welcome h1 {
+.welcome-text {
+  letter-spacing: -1.5px;
   width: 100%;
-  color: #7e94a1;
+  color: #293241;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.welcome h1::after {
+/* .welcome h1::after {
   content: '';
-  background: #7e94a1;
+  background: #293241;
   display: block;
   height: 3px;
   width: 250px;
   margin: 5px auto 5px;
-}
+} */
 .welcome h1 span {
   position: absolute;
   font-size: 50px;
@@ -132,25 +183,47 @@ blockquote p {
   font-size: 200px;
 }
 
+.job-title {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #293241;
+  font-size: 3.6rem;
+}
+.job-title::before,
+.job-title::after {
+  content: '';
+  background: #293241;
+  display: block;
+  height: 3px;
+  width: 250px;
+}
+
 /* ABOUT ME */
 .about-section {
   display: flex;
-  flex-direction: row;
+
   justify-content: center;
-  align-items: flex-start;
-  gap: 10%;
+
   width: 100%;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 10rem;
+  background-image: linear-gradient(to bottom, rgba(224, 251, 252), #fff);
+  /* background-image: linear-gradient(180deg, #c0b8a5, #dbd5c7); */
+}
 
-  background-image: linear-gradient(180deg, #c0b8a5, #dbd5c7);
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .headshot {
   height: 25rem;
   border-radius: 50%;
   margin-left: 5rem;
-  box-shadow: 7px 5px 5px #857f73;
+  box-shadow: 0px 3px 2px rgba(8, 8, 8, 0.452);
 }
 
 .section-title {
@@ -198,7 +271,7 @@ blockquote p {
 .operations__content p {
   /* grid-column: 2; */
   text-align: left;
-  color: #000;
+  color: #293241;
 }
 .operations__content ul {
   list-style: inside;
