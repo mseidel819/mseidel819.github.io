@@ -239,9 +239,7 @@ blockquote p {
   /* background-image: linear-gradient(0deg, #c0b8a5, #dbd5c7); */
   background-image: linear-gradient(to top, rgba(224, 251, 252), #fff);
 }
-.projects-header {
-  /* margin-top: 6.4rem; */
-}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
