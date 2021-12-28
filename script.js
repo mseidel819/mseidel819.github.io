@@ -19,11 +19,11 @@ navLinks.addEventListener('click', function (e) {
   }
 });
 
-navLogo.addEventListener('click', function (e) {
-  e.preventDefault();
+// navLogo.addEventListener('click', function (e) {
+//   e.preventDefault();
 
-  document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
-});
+//   document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
+// });
 
 //menu fade
 
