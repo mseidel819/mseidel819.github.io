@@ -18,11 +18,24 @@
     <link rel="icon" href="img/logo64.png" />
     <link rel="apple-touch-icon" href="img/logo192.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
     <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
   ></script>
-
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script
+  defer
+  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+></script>
 
     <script src="particles.js" defer></script>
    <script src="app.js" defer></script>
@@ -30,29 +43,29 @@
    <title>Matt Seidel: Front-end Developer</title>
     </head>
 <body>
-   <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-    />
-
-    <nav id="navbar" class="nav">
    
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a class="nav-link" href="#section--2">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-    </nav>
+<header class='header'>
 
+  <nav id="navbar" class="nav nav-open">
+    
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="nav-link" href="#section--2">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button class='btn-mobile-nav'>
+    <ion-icon class='icon-mobile-nav' name="menu-outline"></ion-icon>
+    <ion-icon class='icon-mobile-nav' name="close-outline"></ion-icon>
+   </button>
+</nav>
+</header>
     <!-- welcome -->
     <section id="welcome-section" class="welcome">
     <div class='welcome-text'>

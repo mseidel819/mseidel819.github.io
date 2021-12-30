@@ -6,6 +6,14 @@ const navLinks = document.querySelector('.nav-links');
 const navItem = document.querySelector('.nav-item');
 const navLink = document.querySelector('.nav-link');
 const navLogo = document.querySelector('.nav-logo');
+const navOpen = document.querySelector('.nav-open');
+const btnMobile = document.querySelector('.btn-mobile-nav');
+
+//mobile navigation
+btnMobile.addEventListener('click', function () {
+  nav.classList.toggle('nav-open');
+});
+
 //button scrolling
 
 navLinks.addEventListener('click', function (e) {
@@ -16,6 +24,7 @@ navLinks.addEventListener('click', function (e) {
     e.preventDefault();
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    nav.classList.toggle('nav-open');
   }
 });
 
