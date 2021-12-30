@@ -97,6 +97,7 @@ blockquote p {
   border: none;
   background-color: rgba(224, 251, 252, 0);
   cursor: pointer;
+  padding: 1.2rem;
   display: none;
   z-index: 1000;
 }
@@ -610,7 +611,7 @@ blockquote p {
 @media (max-width: 63em) {
   .btn-mobile-nav {
     display: block;
-    padding: 1.6rem;
+    padding: 0.8rem;
   }
 
   .nav-links {
@@ -806,6 +807,17 @@ blockquote p {
 }
 
 @media (max-width: 26em) {
+  .btn-mobile-nav {
+    padding: 0;
+    background: none;
+  }
+  .nav {
+    background: none;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.6rem;
+  }
   .about-container {
     width: auto;
   }
