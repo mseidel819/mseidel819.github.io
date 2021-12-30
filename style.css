@@ -125,7 +125,7 @@ blockquote p {
 }
 
 .job-title {
-  margin-top: 2.4rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +329,7 @@ blockquote p {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  height: 41rem;
+  height: 43rem;
   width: 100%;
   background-image: linear-gradient(to top, #3d5a80, rgba(224, 251, 252));
   border-top: 2px solid rgba(152, 193, 217);
@@ -344,7 +344,7 @@ blockquote p {
   color: #293241;
 }
 .contact-content {
-  margin-top: 4.8rem;
+  margin: 4.8rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -356,7 +356,6 @@ blockquote p {
   color: #293241;
 }
 .content-logo p {
-  margin-top: 0.8rem;
   gap: 0.8rem;
   display: flex;
   justify-content: center;
@@ -413,7 +412,7 @@ blockquote p {
   color: #000c19;
   display: inline-block;
   /* padding: 1.6rem; */
-  margin-top: 5rem;
+  margin-top: 0rem;
   font-size: 1.8rem;
 }
 
@@ -520,6 +519,10 @@ blockquote p {
 
 /* 1250px */
 @media (max-width: 79em) {
+  .nav-link:link,
+  .nav-link:visited {
+    padding: 1.5rem;
+  }
   .welcome h1 {
     font-size: 12rem;
   }
@@ -527,12 +530,10 @@ blockquote p {
     font-size: 3rem;
   }
   .job-title {
-    margin-top: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    color: #293241;
+
     font-size: 2.4rem;
   }
   .job-title::before,
@@ -569,7 +570,7 @@ blockquote p {
     font-size: 1.6rem;
   }
   .contact {
-    height: 36rem;
+    height: 38rem;
   }
   #contact-title p {
     font-size: 2rem;
@@ -587,15 +588,47 @@ blockquote p {
 }
 
 @media (max-width: 63em) {
+  .welcome h1 {
+    font-size: 10rem;
+  }
+  .welcome h1 span {
+    font-size: 2.6rem;
+  }
+
+  .job-title::before,
+  .job-title::after {
+    content: '';
+    background: #293241;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3px;
+    width: 12rem;
+  }
+  .nav-link {
+    font-size: 2.4rem;
+  }
   .about-section {
     padding-top: 5rem;
   }
   .about-grid {
     grid-template-columns: 1fr;
     margin-bottom: 4rem;
+    justify-content: center;
+    gap: 1rem;
   }
-  .about-content {
-    width: 4rem;
+  .about__headshot {
+    display: flex;
+    justify-content: center;
+  }
+  .about-container {
+    width: 30rem;
+  }
+  .headshot {
+    margin: 2.4rem;
+  }
+  .code-icons {
+    width: 26rem;
   }
   .operations__tab {
     font-size: 1.6rem;
@@ -608,6 +641,9 @@ blockquote p {
   .operations__content p {
     font-size: 2rem;
   }
+  .operations__content li {
+    font-size: 1.8rem;
+  }
   .projects-header {
     font-size: 3.6rem;
   }
@@ -617,5 +653,103 @@ blockquote p {
   .btn-show-all {
     font-size: 2rem;
     padding: 1.2rem 2rem;
+  }
+  .contact-links {
+    gap: 1rem;
+  }
+}
+
+/* 615px */
+
+@media (max-width: 39em) {
+  .nav-links {
+    margin: 0rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    padding: 1rem 0.5rem;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+  }
+
+  .about__content {
+    width: 35rem;
+  }
+  .welcome h1 {
+    font-size: 6.4rem;
+  }
+  .welcome h1 span {
+    font-size: 1.8rem;
+  }
+
+  .job-title {
+    font-size: 1.8rem;
+  }
+  .job-title::before,
+  .job-title::after {
+    height: 3px;
+    width: 5rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.4rem;
+  }
+
+  .operations__tab {
+    padding: 0.5rem 0.5rem;
+  }
+  .operations__content p {
+    font-size: 1.6rem;
+  }
+  .operations__content li {
+    font-size: 1.4rem;
+  }
+  .projects-header {
+    font-size: 2.4rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-title {
+    font-size: 1.6rem;
+  }
+  .btn-show-all {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .content-logo h2 {
+    font-size: 4.4rem;
+  }
+
+  .content-logo p {
+    margin: 0;
+  }
+  .contact-job::before,
+  .contact-job::after {
+    width: 5rem;
+  }
+  .contact-content {
+    margin: 2.4rem 0;
+  }
+  .contact-links {
+    margin: 0;
+    font-size: 2.4rem;
+    gap: 0;
+  }
+  .contact {
+    height: 31rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .about-container {
+    width: auto;
+  }
+  .about__tab-container {
+    margin-left: 2rem;
+  }
+  .operations__content {
+    margin-left: 2rem;
   }
 }
