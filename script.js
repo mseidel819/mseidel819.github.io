@@ -6,6 +6,14 @@ const navLinks = document.querySelector('.nav-links');
 const navItem = document.querySelector('.nav-item');
 const navLink = document.querySelector('.nav-link');
 const navLogo = document.querySelector('.nav-logo');
+const navOpen = document.querySelector('.nav-open');
+const btnMobile = document.querySelector('.btn-mobile-nav');
+
+//mobile navigation
+btnMobile.addEventListener('click', function () {
+  nav.classList.toggle('nav-open');
+});
+
 //button scrolling
 
 navLinks.addEventListener('click', function (e) {
@@ -16,14 +24,15 @@ navLinks.addEventListener('click', function (e) {
     e.preventDefault();
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    nav.classList.toggle('nav-open');
   }
 });
 
-navLogo.addEventListener('click', function (e) {
-  e.preventDefault();
+// navLogo.addEventListener('click', function (e) {
+//   e.preventDefault();
 
-  document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
-});
+//   document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
+// });
 
 //menu fade
 
@@ -46,3 +55,27 @@ tabsContainer.addEventListener('click', function (e) {
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
     .classList.add('operations__content--active');
 });
+
+/////////////////////////////////////////////////////////////////////////////////
+function checkFlexGap() {
+  var flex = document.createElement('div');
+  flex.style.display = 'flex';
+  flex.style.flexDirection = 'column';
+  flex.style.rowGap = '1px';
+
+  flex.appendChild(document.createElement('div'));
+  flex.appendChild(document.createElement('div'));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
+
+  if (!isSupported) document.body.classList.add('no-flexbox-gap');
+}
+checkFlexGap();
+/////////////////////////////////////////////////////////////////////////////////
+
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;

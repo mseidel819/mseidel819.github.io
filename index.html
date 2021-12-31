@@ -1,153 +1,200 @@
 <!DOCTYPE html>
-
+<html lang=en>
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="img/icon.png" />
-  <title>Matt Seidel</title>
-</head>
-<body>
-  <link
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta
+      name="description"
+      content="Matt Seidel is a front-end developer looking to join your team."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+   />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo64.png" />
+    <link rel="apple-touch-icon" href="img/logo192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
     crossorigin="anonymous"
-  />
+    />
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script
+  defer
+  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+></script>
+
+    <script src="particles.js" defer></script>
+   <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
+   <title>Matt Seidel: Front-end Developer</title>
+    </head>
+<body>
+   
+<header class='header'>
 
   <nav id="navbar" class="nav">
-    <div class="nav-items">
-      <a class="nav-logo" href="#welcome-section"
-        ><img class="logo" src="img/logo2.png" alt="logo"
-      /></a>
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a class="nav-link" href="#section--2">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+    
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="nav-link" href="#section--2">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <button class='btn-mobile-nav'>
+    <ion-icon class='icon-mobile-nav' name="menu-outline"></ion-icon>
+    <ion-icon class='icon-mobile-nav' name="close-outline"></ion-icon>
+   </button>
+</nav>
+</header>
+    <!-- welcome -->
+    <section id="welcome-section" class="welcome">
+    <div class='welcome-text'>
+      <h1><span> My name is</span>Matt Seidel</h1>
+      <p class='job-title'>Front-end Developer</p>
     </div>
-  </nav>
+    </section>
 
-  <!-- welcome -->
-  <section id="welcome-section" class="welcome">
-    <h1><span> My name is</span>Matt Seidel</h1>
-  </section>
-
-  <section class="about-section" id="section--2">
-    <div class="about__headshot">
-      <img class="headshot" src="img/headshot.jpg" alt="headshot" />
-    </div>
-    <div class="about__content">
-      <div class="section-title">
-        <h2>A little bit about myself...</h2>
+      <!--ABOUT-->
+    <section class="about-section" id="section--2">
+    <div class="about-grid">
+      <div class="about__headshot">
+        <div class='about-container'>
+        <img class="headshot" src="img/headshot.jpg" alt="headshot" />
+       <div class='code-icons'>
+        <img class='code-icon' src='img/html5-js-css3-logo-png.png' alt='html 5, css 3, javascript' />
+       </div>
+       </div>
       </div>
+      <div class="about__content">
+        <div class="section-title">
+          <h2>A little bit about myself...</h2>
+        </div>
 
-      <div class="about">
-        <div class="about__tab-container">
-          <button
+        <div class="about">
+          <div class="about__tab-container">
+            <button
+              class="
+               
+                operations__tab operations__tab--1 operations__tab--active
+              "
+              data-tab="1"
+            >
+              <i class="fas fa-graduation-cap"></i> Education Background
+            </button>
+            <button
+              class=" operations__tab operations__tab--2"
+              data-tab="2"
+            >
+              <i class="fas fa-user-plus"></i>
+
+              Professional Strengths
+            </button>
+            <button
+              class=" operations__tab operations__tab--3"
+              data-tab="3"
+            >
+              <i class="fas fa-smile-beam"></i>
+
+              Defining Qualities
+            </button>
+          </div>
+
+          <div
             class="
-              btn-show-all
-              operations__tab operations__tab--1 operations__tab--active
+              operations__content
+              operations__content--1
+              operations__content--active
             "
-            data-tab="1"
           >
-            <i class="fas fa-graduation-cap"></i> Education Background
-          </button>
-          <button
-            class="btn-show-all operations__tab operations__tab--2"
-            data-tab="2"
-          >
-            <i class="fas fa-user-plus"></i>
-
-            Professional Strengths
-          </button>
-          <button
-            class="btn-show-all operations__tab operations__tab--3"
-            data-tab="3"
-          >
-            <i class="fas fa-smile-beam"></i>
-
-            Defining Qualities
-          </button>
-        </div>
-
-        <div
-          class="
-            operations__content
-            operations__content--1
-            operations__content--active
-          "
-        >
-          <p>
-            In 2012, I graduated from Illinois Wesleyan University with a double
-            major in music and philosophy. After taking a year off from school,
-            I went on to complete a master’s degree in trombone performance at
-            Southern Illinois University in 2015.
-          </p>
-          <br />
-          <p>
-            I am currently working full-time and learning how to program
-            part-time in order to make a career change into software/web
-            development.
-          </p>
-        </div>
-
-        <div class="operations__content operations__content--2">
-          <p>
-            While music has been the focus of my life since school, my musical
-            success is a positive side-effect of my true passion:
-          </p>
-          <blockquote>
             <p>
-              An intellectual curiosity for all things, and the commitment
-              towards constant self-improvement.
+              In 2012, I graduated from Illinois Wesleyan University with a
+              double major in music and philosophy. After taking a year off from
+              school, I went on to complete a master’s degree in trombone
+              performance at Southern Illinois University in 2015.
             </p>
-          </blockquote>
-          <br />
-          <p>
-            This can be seen through consistent participation in continuing
-            education courses throughout my professional years. Examples of my
-            continuing education include:
-          </p>
-          <ul>
-            <li>
-              Weeklong instrument repair clinics at the NAPBIRT training center
-            </li>
-            <li>College courses at Heartland Community College</li>
-            <li>Programming courses on Udemy.com</li>
-          </ul>
-        </div>
+            <br />
+            <p>
+              I am currently working full-time and learning how to program
+              part-time in order to make a career change into software/web
+              development.
+            </p>
+          </div>
 
-        <div class="operations__content operations__content--3">
-          <p>Qualities that I use to define myself are:</p>
-          <ul>
-            <li>my positive moral character</li>
-            <li>strong work ethic</li>
-            <li>critical thinking</li>
-            <li>problem solving</li>
-            <li>A focused, yet lighthearted approach to work</li>
-          </ul>
-          <br />
-          <p>
-            You can rest easy knowing that I will be a calming, positive, and
-            enjoyable addition to your team!
-          </p>
+          <div class="operations__content operations__content--2">
+            <p>
+              While music has been the focus of my life since school, my musical
+              success is a positive side-effect of my true passion:
+            </p>
+            <blockquote>
+              <p>
+                An intellectual curiosity for all things, and the commitment
+                towards constant self-improvement.
+              </p>
+            </blockquote>
+            <br />
+            <p>
+              This can be seen through consistent participation in continuing
+              education courses throughout my professional years. Examples of my
+              continuing education include:
+            </p>
+            <ul>
+              <li>
+                Weeklong instrument repair clinics at the NAPBIRT training
+                center
+              </li>
+              <li>College courses at Heartland Community College</li>
+              <li>Programming courses on Udemy.com</li>
+            </ul>
+          </div>
+
+          <div class="operations__content operations__content--3">
+            <p>Qualities that I use to define myself are:</p>
+            <ul>
+              <li>my positive moral character</li>
+              <li>strong work ethic</li>
+              <li>critical thinking</li>
+              <li>problem solving</li>
+              <li>A focused, lighthearted, and positive approach to work</li>
+            </ul>
+            <br />
+            <p>
+              You can rest easy knowing that I will be a calming, positive, and
+              enjoyable addition to your team!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+    </section>
 
-  <section id="projects" class="project-section">
+   <section id="projects" class="project-section">
     <h2 class="projects-header">Check out some projects I've completed</h2>
 
     <div class="project-grid">
       <a
         href="https://seidelmatt.com/Mapty_App/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img class="project-img" src="img/mapty.png" alt="MaptyApp" />
@@ -159,6 +206,7 @@
       <a
         href="https://seidelmatt.com/Bankist_App/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img class="project-img" src="img/bankistApp.png" alt="Bankist App" />
@@ -171,6 +219,7 @@
       <a
         href="https://seidelmatt.com/Bankist_LandingPage/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img class="project-img" src="img/bankistPage.png" alt="Landing page" />
@@ -183,6 +232,7 @@
       <a
         href="https://seidelmatt.com/scoutSurvey/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img class="project-img" src="img/fccsurvey.png" alt="Survey form" />
@@ -192,6 +242,7 @@
       <a
         href="https://seidelmatt.com/TechnicalDoc/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img
@@ -205,6 +256,7 @@
       <a
         href="https://seidelmatt.com/Random-Quote-Generator/"
         target="_blank"
+        rel="noopener"
         class="project project-tile"
       >
         <img
@@ -220,39 +272,56 @@
       href="https://github.com/mseidel819"
       class="btn btn-show-all"
       target="_blank"
+      rel="noopener"
       >Show on GitHub<i class="fas fa-chevron-right"></i
     ></a>
-  </section>
+          </section>
 
-  <section id="contact" class="contact">
-    <div class="contact-content">
+  <footer id="contact" class="contact">
+  <div class='contact-container'>
+        <div class='content-logo'>
+        <h2>Matt Seidel</h2>
+        <p class='contact-job'>Front-end Developer</p>
+         </div>
+
+      <div class='contact-content'>
       <div id="contact-title">
-        <h2>Get in touch</h2>
-        <p>I look forward to being part of your team!</p>
+      <p>I look forward to being part of your team!</p>
       </div>
+
       <div class="contact-links">
         <a
           id="profile-link"
           href="https://github.com/mseidel819"
           target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
+          rel="noopener"
+          class="btn contact-details" alt='Github'
+          ><i class="fab fa-github"></i></a
         >
 
-        <a href="mailto:mseidel819@gmail.com" class="btn contact-details"
-          ><i class="fas fa-at"></i> Email</a
+        <a href="mailto:mseidel819@gmail.com" class="btn contact-details" alt='email'
+          ><i class="fas fa-at"></i></a
         >
         <a
           href="https://www.linkedin.com/in/matthew-seidel-18482343/"
           class="btn contact-details"
           target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
+          rel="noopener"
+           alt='LinkedIn'
+          ><i class="fab fa-linkedin"></i></a
         >
       </div>
+ 
     </div>
-  </section>
 
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-  <script src="script.js"></script>
+    <div class='copyright'>
+      <p>Copyright &copy;<span class='year'>2027</span> by Matt Seidel</p>
+    </div>
+  </div>
+    </footer>
+ 
+
 </body>
+  
+  
+</html>
