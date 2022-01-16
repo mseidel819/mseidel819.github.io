@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   color: #293241;
   overflow-x: hidden;
+  /* position: relative; */
 }
 h1,
 h2,
@@ -87,7 +88,7 @@ blockquote p {
   text-decoration: none;
   display: block;
   border-radius: 5px;
-  padding: 20px;
+  padding: 2rem;
   transition: all 0.3s;
 }
 .nav-link:hover,
@@ -140,11 +141,11 @@ blockquote p {
 } */
 .welcome h1 span {
   position: absolute;
-  font-size: 50px;
+  font-size: 5rem;
   top: -10%;
 }
 .welcome h1 {
-  font-size: 200px;
+  font-size: 20rem;
 }
 
 .job-title {
@@ -179,6 +180,11 @@ blockquote p {
   background-image: linear-gradient(to bottom, rgba(224, 251, 252), #fff);
   /* background-image: linear-gradient(180deg, #c0b8a5, #dbd5c7); */
 }
+.about-container-big {
+  max-width: 1000rem;
+  display: flex;
+  justify-content: center;
+}
 
 .about-grid {
   display: grid;
@@ -188,10 +194,15 @@ blockquote p {
 
   margin-bottom: 8rem;
 }
-
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .headshot {
   height: 40rem;
   width: auto;
+  object-fit: cover;
   border-radius: 10px;
   margin-left: 5rem;
   margin-bottom: 2.4rem;
@@ -278,7 +289,8 @@ blockquote p {
 
 .project-section {
   text-align: center;
-  padding: 50px;
+  padding: 5rem;
+  padding-top: 9rem;
   /* background-image: linear-gradient(0deg, #c0b8a5, #dbd5c7); */
   background-image: linear-gradient(to top, rgba(224, 251, 252), #fff);
 }
@@ -303,6 +315,7 @@ blockquote p {
   color: #293241;
 }
 .project {
+  cursor: pointer;
   background-color: #fff;
   padding: 3px;
   padding-top: 5px;
@@ -443,352 +456,114 @@ blockquote p {
   margin-top: 0rem;
   font-size: 1.8rem;
 }
+.overlay {
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 325%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+  transition: ease-in 0.2s;
+}
+.popout {
+  position: fixed;
+  width: 70rem;
+  max-height: 100rem;
+  margin: auto auto;
 
-/* 1500px*/
-@media (max-width: 94em) {
-  .welcome h1 {
-    font-size: 16rem;
-  }
-  .welcome h1 span {
-    font-size: 4rem;
-  }
-  .headshot {
-    height: 30rem;
-  }
-  .code-icon {
-    height: 6.2rem;
-  }
-  .about-grid {
-    gap: 6.2rem;
-  }
-  .about__content {
-    width: 60rem;
-    justify-self: center;
-  }
-  .section-title h2 {
-    font-size: 3.6rem;
-  }
-  .operations__tab {
-    font-size: 2.4rem;
-  }
-  .operations__content p {
-    font-size: 2.4rem;
-  }
+  /* margin-top: 0rem; */
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  .projects-header {
-    font-size: 4rem;
-  }
-
-  .project-grid {
-    /* grid-template-columns: repeat(2, 1fr); */
-    max-width: 80rem;
-  }
-  .btn-show-all {
-    font-size: 2.4rem;
-    padding: 1.6rem 2.4rem;
-  }
-  .content-logo h2 {
-    font-size: 7.4rem;
-  }
-  .content-logo p {
-    font-size: 2rem;
-  }
-
-  #contact-title p {
-    font-size: 2.4rem;
-  }
-  .contact-links {
-    font-size: 4.2rem;
-  }
+  background-color: white;
+  /* padding: 6rem; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: ease-in 0.2s;
+}
+.hidden {
+  display: none;
+  transition: all ease-in 0.2s;
+}
+.img-container {
+  position: relative;
+}
+.popout-img {
+  width: 70.2rem;
+  height: 25rem;
+  object-fit: cover;
+  object-position: 0% 15%;
+}
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: rgba(224, 251, 252, 0);
+  cursor: pointer;
+  padding: 1.2rem;
+  /* display: none; */
+  z-index: 1000;
+}
+.icon-mobile-pop {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #000c19;
+}
+.popout-title {
+  font-size: 3.6rem;
+}
+.popout-title::after {
+  content: '';
+  background: #293241;
+  display: flex;
+  margin: 0 auto;
+  height: 2px;
+  width: 25rem;
+}
+.popout-text {
+  margin-bottom: 4rem;
+}
+.popout-point {
+  margin: 2rem 3rem;
+  margin-bottom: 4rem;
+}
+.popout-point h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.popout-point p {
+  font-size: 2rem;
+  text-align: left;
+  color: #3d5a80;
 }
 
-/* 1250px */
-@media (max-width: 79em) {
-  .nav-link:link,
-  .nav-link:visited {
-    padding: 1.5rem;
-  }
-  .welcome h1 {
-    font-size: 12rem;
-  }
-  .welcome h1 span {
-    font-size: 3rem;
-  }
-  .job-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2.4rem;
-  }
-  .job-title::before,
-  .job-title::after {
-    content: '';
-    background: #293241;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3px;
-    width: 16rem;
-  }
-  .about-grid {
-    gap: 5.2rem;
-  }
-  .headshot {
-    height: 24rem;
-  }
-
-  .about-content {
-    width: 5rem;
-  }
-  .operations__tab {
-    font-size: 2rem;
-    width: 18rem;
-  }
-  .operations__content {
-    max-width: 95%;
-  }
-  .content-logo h2 {
-    font-size: 6.8rem;
-  }
-  .content-logo p {
-    font-size: 1.6rem;
-  }
-  .contact {
-    height: 40rem;
-  }
-  #contact-title p {
-    font-size: 2rem;
-  }
-  .contact-links {
-    font-size: 3.6rem;
-  }
-  .copyright {
-    margin-top: 2rem;
-  }
-  .copyright p {
-    font-size: 1.4rem;
-    margin-top: 0;
-  }
+.popout-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
 }
-
-@media (max-width: 63em) {
-  .btn-mobile-nav {
-    display: block;
-    padding: 0.8rem;
-  }
-
-  .nav-links {
-    background: rgba(224, 251, 252, 0.93);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    z-index: 100;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4.8rem;
-    transition: all 0.3s ease-in;
-
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-
-  .nav-open .nav-links {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0%);
-  }
-
-  .nav-open .icon-mobile-nav[name='close-outline'] {
-    display: block;
-  }
-
-  .nav-open .icon-mobile-nav[name='menu-outline'] {
-    display: none;
-  }
-
-  .nav-link {
-    font-size: 3rem;
-  }
-  .welcome h1 {
-    font-size: 10rem;
-  }
-  .welcome h1 span {
-    font-size: 2.6rem;
-  }
-
-  .job-title::before,
-  .job-title::after {
-    content: '';
-    background: #293241;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3px;
-    width: 12rem;
-  }
-
-  .about-section {
-    padding-top: 5rem;
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 4rem;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .about__headshot {
-    display: flex;
-    justify-content: center;
-  }
-  .about-container {
-    width: 30rem;
-  }
-  .headshot {
-    margin: 2.4rem;
-  }
-  .code-icons {
-    width: 26rem;
-  }
-  .operations__tab {
-    font-size: 1.6rem;
-    width: 16rem;
-  }
-  .operations__content {
-    max-width: 95%;
-    margin-top: 0;
-  }
-  .operations__content p {
-    font-size: 2rem;
-  }
-  .operations__content li {
-    font-size: 1.8rem;
-  }
-  .projects-header {
-    font-size: 3.6rem;
-  }
-  .project-title {
-    font-size: 2rem;
-  }
-  .btn-show-all {
-    font-size: 2rem;
-    padding: 1.2rem 2rem;
-  }
-  .contact-links {
-    gap: 1rem;
-  }
+.popout-btn {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #98c1d9;
+  box-shadow: 5px 5px 2.5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5px;
+  margin-bottom: 4.8rem;
+  transition: all 0.3s;
 }
-
-/* 615px */
-
-@media (max-width: 39em) {
-  .nav-links {
-    margin: 0rem;
-  }
-  .nav-link:link,
-  .nav-link:visited {
-    padding: 1rem 0.5rem;
-    font-size: 1.6rem;
-    transition: all 0.3s;
-  }
-
-  .about__content {
-    width: 35rem;
-  }
-  .welcome h1 {
-    font-size: 6.4rem;
-  }
-  .welcome h1 span {
-    font-size: 1.8rem;
-  }
-
-  .job-title {
-    font-size: 1.8rem;
-  }
-  .job-title::before,
-  .job-title::after {
-    height: 3px;
-    width: 5rem;
-  }
-
-  .section-title h2 {
-    font-size: 2.4rem;
-  }
-
-  .operations__tab {
-    padding: 0.5rem 0.5rem;
-  }
-  .operations__content p {
-    font-size: 1.6rem;
-  }
-  .operations__content li {
-    font-size: 1.4rem;
-  }
-  .projects-header {
-    font-size: 2.4rem;
-  }
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .project-title {
-    font-size: 1.6rem;
-  }
-  .btn-show-all {
-    margin-bottom: 1.2rem;
-    font-size: 1.6rem;
-  }
-
-  .content-logo h2 {
-    font-size: 4.4rem;
-  }
-
-  .content-logo p {
-    margin: 0;
-  }
-  .contact-job::before,
-  .contact-job::after {
-    width: 5rem;
-  }
-  .contact-content {
-    margin: 2.4rem 0;
-  }
-  .contact-links {
-    margin: 0;
-    font-size: 2.4rem;
-    gap: 0;
-  }
-  .contact {
-    height: 33rem;
-  }
-}
-
-@media (max-width: 26em) {
-  .btn-mobile-nav {
-    padding: 0;
-    background: none;
-  }
-  .nav {
-    background: none;
-  }
-  .nav-link:link,
-  .nav-link:visited {
-    font-size: 2.6rem;
-  }
-  .about-container {
-    width: auto;
-  }
-  .about__tab-container {
-    margin-left: 2rem;
-  }
-  .operations__content {
-    margin-left: 2rem;
-  }
+.popout-btn:hover,
+.popout-btn:active {
+  background-color: #ee6c4d;
+  color: #fff;
+  transform: scale(1.05);
 }
