@@ -466,7 +466,6 @@ blockquote p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
-  transition: ease-in 0.2s;
 }
 .popout {
   position: fixed;
@@ -486,11 +485,9 @@ blockquote p {
   overflow: hidden;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
-  transition: ease-in 0.2s;
 }
 .hidden {
   display: none;
-  transition: all ease-in 0.2s;
 }
 .img-container {
   position: relative;
