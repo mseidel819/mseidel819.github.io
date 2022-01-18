@@ -15,24 +15,18 @@ btnMobile.addEventListener('click', function () {
 });
 
 //button scrolling
-
 navLinks.addEventListener('click', function (e) {
-  e.preventDefault();
-
-  //matching strategy
-  if (e.target.classList.contains('nav-link')) {
+  if (
+    e.target.classList.contains('nav-link') &&
+    !e.target.classList.contains('resume')
+  ) {
     e.preventDefault();
-    const id = e.target.getAttribute('href');
+    let id = e.target.getAttribute('href');
+
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     nav.classList.toggle('nav-open');
   }
 });
-
-// navLogo.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-//   document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
-// });
 
 //menu fade
 
