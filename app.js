@@ -133,4 +133,4 @@ const particleSection = function (id) {
   );
 };
 // particleSection('welcome-section');
-particleSection('contact');
+// particleSection('contact');
