@@ -248,7 +248,7 @@ blockquote p {
   justify-content: center;
 }
 
-.operations__tab {
+.information__tab {
   margin-right: 2.5rem;
   margin-bottom: 4.8rem;
   border: none;
@@ -262,13 +262,13 @@ blockquote p {
   border-radius: 5px;
 }
 
-.operations__tab--active {
+.information__tab--active {
   transform: translateY(-30%);
   background-color: #3d5a80;
   color: #e0fbfc;
 }
 
-.operations__content {
+.information__content {
   display: none;
   font-size: 1.7rem;
   margin-top: 5rem;
@@ -276,24 +276,24 @@ blockquote p {
   /* overflow-y: auto; */
   padding-right: 20px;
 }
-.operations__content--active {
+.information__content--active {
   display: block;
   /* grid-template-rows: 40rem 1fr;
   column-gap: 0rem;
   row-gap: 0rem; */
 }
 
-.operations__content p {
+.information__content p {
   /* grid-column: 2; */
   text-align: left;
   color: #293241;
 }
-.operations__content ul {
+.information__content ul {
   list-style: inside;
   margin-top: 1.6rem;
 }
 
-.operations__content li {
+.information__content li {
   font-size: 2.4rem;
 }
 
