@@ -34,20 +34,20 @@ navLinks.addEventListener('click', function (e) {
 
 //about selector buttons
 const tabsContainer = document.querySelector('.about__tab-container');
-const tabs = document.querySelectorAll('.operations__tab');
-const tabsContent = document.querySelectorAll('.operations__content');
+const tabs = document.querySelectorAll('.information__tab');
+const tabsContent = document.querySelectorAll('.information__content');
 
 tabsContainer.addEventListener('click', function (e) {
-  const clicked = e.target.closest('.operations__tab');
+  const clicked = e.target.closest('.information__tab');
 
   if (!clicked) return;
 
-  tabs.forEach(t => t.classList.remove('operations__tab--active'));
-  clicked.classList.add('operations__tab--active');
-  tabsContent.forEach(c => c.classList.remove('operations__content--active'));
+  tabs.forEach(t => t.classList.remove('information__tab--active'));
+  clicked.classList.add('information__tab--active');
+  tabsContent.forEach(c => c.classList.remove('information__content--active'));
   document
-    .querySelector(`.operations__content--${clicked.dataset.tab}`)
-    .classList.add('operations__content--active');
+    .querySelector(`.information__content--${clicked.dataset.tab}`)
+    .classList.add('information__content--active');
 });
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +79,7 @@ yearEl.textContent = currentYear;
 //////////////////////////////////////////
 
 const project1 = {
-  img: 'img/pet_adopter.png',
+  img: 'img/pet_adopter.webp',
   title: 'Dog Finder',
   description:
     'The Dog-Finder app accesses the Petfinder API in order to search for adoptable dogs within 10 miles of an entered location. After selecting a dog, its info/details, as well as the organization caring for it, are rendered dynamically. This project also uses MVC architecture.',
@@ -90,7 +90,7 @@ const project1 = {
 };
 
 const project2 = {
-  img: 'img/portfolio.png',
+  img: 'img/portfolio.webp',
   title: 'My Portfolio',
   description:
     'This is a page designed from the ground-up to introduce myself and show my projects to potential employers.',
@@ -101,7 +101,7 @@ const project2 = {
 };
 
 const project3 = {
-  img: 'img/forkify.png',
+  img: 'img/forkify.webp',
   title: 'Forkify App',
   description:
     "This was the capstone project from 'The Complete JavaScript Course 2022: From Zero to Expert!'. This project accesses a recipe API in order to search for and display recipes based on certain search criteria.",
@@ -112,7 +112,7 @@ const project3 = {
 };
 
 const project4 = {
-  img: 'img/mapty.png',
+  img: 'img/mapty.webp',
   title: 'Mapty App',
   description:
     "This was a project from 'The Complete JavaScript Course 2022: From Zero to Expert!' on Udemy.com. This project Accesses a geolocation API and allows user to input workout data by clicking on the rendered map.",
@@ -123,7 +123,7 @@ const project4 = {
 };
 
 const project5 = {
-  img: 'img/bankistApp.png',
+  img: 'img/bankistApp.webp',
   title: 'Bankist App',
   description:
     "This was a project from 'The Complete JavaScript Course 2022: From Zero to Expert!' on Udemy.com. This project allows a user to input a username and pin number in order to access their banking information. once logged in, you can request a deposit, withdrawal, or transfer from another users account.",
@@ -134,7 +134,7 @@ const project5 = {
 };
 
 const project6 = {
-  img: 'img/omnifood.png',
+  img: 'img/omnifood.webp',
   title: 'Omnifood',
   description:
     "This was a project from 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com. It shows a landing page for a food delivery service.",
@@ -163,7 +163,7 @@ const openPopout = function (e) {
   clear();
   popout.insertAdjacentHTML('afterbegin', generateMarkup(projectDisplay));
   closeBtn = document.querySelector('.close-btn');
-  console.log(closeBtn);
+  // console.log(closeBtn);
   closeBtn.addEventListener('click', closePopout);
 };
 const closePopout = function () {
