@@ -22,10 +22,10 @@
   .section-title h2 {
     font-size: 3.6rem;
   }
-  .operations__tab {
+  .information__tab {
     font-size: 2.4rem;
   }
-  .operations__content p {
+  .information__content p {
     font-size: 2.4rem;
   }
 
@@ -135,11 +135,11 @@
   .about-content {
     width: 5rem;
   }
-  .operations__tab {
+  .information__tab {
     font-size: 2rem;
     width: 18rem;
   }
-  .operations__content {
+  .information__content {
     max-width: 95%;
   }
   .content-logo h2 {
@@ -252,18 +252,18 @@
   .code-icons {
     width: 26rem;
   }
-  .operations__tab {
+  .information__tab {
     font-size: 1.6rem;
     width: 16rem;
   }
-  .operations__content {
+  .information__content {
     max-width: 95%;
     margin-top: 0;
   }
-  .operations__content p {
+  .information__content p {
     font-size: 2rem;
   }
-  .operations__content li {
+  .information__content li {
     font-size: 1.8rem;
   }
   .projects-header {
@@ -323,13 +323,13 @@
     font-size: 2.4rem;
   }
 
-  .operations__tab {
+  .information__tab {
     padding: 0.5rem 0.5rem;
   }
-  .operations__content p {
+  .information__content p {
     font-size: 1.6rem;
   }
-  .operations__content li {
+  .information__content li {
     font-size: 1.4rem;
   }
   .projects-header {
@@ -399,7 +399,7 @@
   .about__tab-container {
     margin-left: 2rem;
   }
-  .operations__content {
+  .information__content {
     margin-left: 2rem;
   }
 
