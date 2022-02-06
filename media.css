@@ -7,14 +7,20 @@
     font-size: 4rem;
   }
   .headshot {
-    height: 30rem;
+    height: 100rem;
   }
   .code-icon {
     height: 6.2rem;
   }
   .about-grid {
     gap: 6.2rem;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
   }
+  .headshot {
+    height: 60rem;
+  }
+
   .about__content {
     width: 60rem;
     justify-self: center;
@@ -26,7 +32,20 @@
     font-size: 2.4rem;
   }
   .information__content p {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+  .skills-list li {
+    font-size: 2rem;
+  }
+  .course-title {
+    font-size: 3rem;
+  }
+  .course-item h3,
+  .course-item p {
+    font-size: 2rem;
+  }
+  .course-deets p {
+    font-size: 1.6rem;
   }
 
   .projects-header {
@@ -125,13 +144,15 @@
     height: 3px;
     width: 16rem;
   }
+
   .about-grid {
-    gap: 5.2rem;
+    gap: 6.2rem;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
   }
   .headshot {
-    height: 24rem;
+    height: 45rem;
   }
-
   .about-content {
     width: 5rem;
   }
@@ -142,6 +163,10 @@
   .information__content {
     max-width: 95%;
   }
+  .skills-list {
+    gap: 15rem;
+  }
+
   .content-logo h2 {
     font-size: 6.8rem;
   }
@@ -266,11 +291,16 @@
   .information__content li {
     font-size: 1.8rem;
   }
+
   .projects-header {
     font-size: 3.6rem;
   }
   .project-title {
     font-size: 2rem;
+  }
+
+  .project-section {
+    padding-top: 5rem;
   }
   .btn-show-all {
     font-size: 2rem;
@@ -332,6 +362,27 @@
   .information__content li {
     font-size: 1.4rem;
   }
+
+  .skills-list {
+    gap: 8rem;
+  }
+  .skills-list li {
+    font-size: 1.6rem;
+  }
+  .course-title {
+    font-size: 2.4rem;
+  }
+  .course-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .course-item p {
+    font-size: 1.2rem;
+  }
+  .course-deets p {
+    font-size: 1rem;
+  }
+
   .projects-header {
     font-size: 2.4rem;
   }
@@ -370,6 +421,7 @@
   }
 
   .popout {
+    max-height: none;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -393,14 +445,24 @@
   .nav-link:visited {
     font-size: 2.6rem;
   }
+
   .about-container {
+    width: 27rem;
+  }
+  .headshot {
     width: auto;
   }
+
   .about__tab-container {
     margin-left: 2rem;
+    /* width: 24rem; */
+  }
+  .information__tab {
+    margin: 0.5rem;
   }
   .information__content {
     margin-left: 2rem;
+    margin-top: 5rem;
   }
 
   .popout-img {

@@ -208,11 +208,11 @@ blockquote p {
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
 }
 .headshot {
   height: 70rem;
-  width: auto;
+  /* width: auto; */
   object-fit: cover;
   border-radius: 10px;
   margin-top: 10rem;
@@ -275,6 +275,7 @@ blockquote p {
   /* padding: 2.5rem 6rem 6.5rem 7rem; */
   /* overflow-y: auto; */
   padding-right: 20px;
+  max-width: 97rem;
 }
 .information__content--active {
   display: block;
@@ -287,6 +288,7 @@ blockquote p {
   /* grid-column: 2; */
   text-align: left;
   color: #293241;
+  /* margin-bottom: 3rem; */
 }
 .information__content ul {
   list-style: inside;
@@ -295,6 +297,32 @@ blockquote p {
 
 .information__content li {
   font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.course-container {
+  margin-top: 5rem;
+}
+.course-title {
+  border-bottom: 3px solid #000c19;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.course-container ul {
+  width: 100%;
+}
+.course-item {
+  display: flex;
+  justify-content: space-between;
+}
+.course-deets {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.skills-list {
+  display: flex;
+  gap: 30rem;
+  margin-bottom: 3rem;
 }
 
 .project-section {
@@ -480,7 +508,7 @@ blockquote p {
 .popout {
   position: fixed;
   width: 70rem;
-  max-height: 100rem;
+  max-height: 90vh;
   margin: auto auto;
 
   /* margin-top: 0rem; */
@@ -493,6 +521,7 @@ blockquote p {
   /* padding: 6rem; */
   border-radius: 10px;
   overflow: hidden;
+  overflow-y: auto;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
@@ -504,7 +533,7 @@ blockquote p {
 }
 .popout-img {
   width: 70.2rem;
-  height: 25rem;
+  height: 15rem;
   object-fit: cover;
   object-position: 0% 15%;
 }
