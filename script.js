@@ -112,14 +112,14 @@ const project3 = {
 };
 
 const project4 = {
-  img: 'img/mapty.webp',
-  title: 'Mapty App',
+  img: 'img/timer.webp',
+  title: 'React Timer',
   description:
-    "This was a project from 'The Complete JavaScript Course 2022: From Zero to Expert!' on Udemy.com. This project Accesses a geolocation API and allows user to input workout data by clicking on the rendered map.",
-  goal: 'To learn about geolocation APIs, DOM manipulation, rendering data, and project architecture',
-  tech: "HTML and CSS were provided. The Javascript files were created as a part of 'The Complete JavaScript Course 2022: From Zero to Expert'.",
-  demo: 'https://seidelmatt.com/Mapty_App/',
-  gitHub: 'https://github.com/mseidel819/Mapty_App',
+    'This is a timer that switches between a session countdown, and a break countdown. When each timer completes, a beep sounds, and the next timer begins.',
+  goal: 'To create a simple application using ReactJS',
+  tech: 'CSS, JavaScript, React, NPM',
+  demo: 'https://seidelmatt.com/react-timer/',
+  gitHub: 'https://github.com/mseidel819/react-timer',
 };
 
 const project5 = {
@@ -134,14 +134,14 @@ const project5 = {
 };
 
 const project6 = {
-  img: 'img/omnifood.webp',
-  title: 'Omnifood',
+  img: 'img/calculator.webp',
+  title: 'React Calculator',
   description:
-    "This was a project from 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com. It shows a landing page for a food delivery service.",
-  goal: 'To learn about best practices for designing a web page using HTML and CSS. Topics presented include best practices, accesability, loading optimization, click and hover effects, and mobile responsiveness.',
-  tech: "HTML and CSS files were created as a part of 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com",
-  demo: 'https://seidelmatt.com/Omnifood/',
-  gitHub: 'https://github.com/mseidel819/Omnifood',
+    'This is your everyday, simple calculator. It passes all of the user stories required by the FreeCodeCamp "Front-end Libraries" certification.',
+  goal: 'To create a simple application using ReactJS',
+  tech: 'CSS, JavaScript, React',
+  demo: 'https://seidelmatt.com/react-calculator/',
+  gitHub: 'https://github.com/mseidel819/react-calculator',
 };
 // console.log(projectNav);
 

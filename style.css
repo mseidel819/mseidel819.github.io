@@ -220,9 +220,10 @@ blockquote p {
 }
 
 .code-icons {
+  margin-top: 1rem;
   display: flex;
   gap: 2.4rem;
-  justify-content: flex-end;
+  justify-content: space-between;
   /* margin-right: 8rem; */
 }
 .code-icon {
