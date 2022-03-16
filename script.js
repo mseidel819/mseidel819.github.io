@@ -115,7 +115,7 @@ const project4 = {
   img: 'img/timer.webp',
   title: 'React Timer',
   description:
-    'This is a timer that switches between a session countdown, and a break countdown. When each timer completes, a beep sounds, and the next timer begins.',
+    'This is a timer that switches between a session countdown, and a break countdown. When each timer completes, a beep sounds, and the next timer begins. It passes all of the user stories required by the FreeCodeCamp "Front-end Libraries" certification.',
   goal: 'To create a simple application using ReactJS',
   tech: 'CSS, JavaScript, React, NPM',
   demo: 'https://seidelmatt.com/react-timer/',
