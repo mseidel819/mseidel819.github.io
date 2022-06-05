@@ -112,25 +112,28 @@ const project3 = {
 };
 
 const project4 = {
-  img: 'img/timer.webp',
-  title: 'React Timer',
+  img: 'img/job-listing-ss.webp',
+  title: 'Static Job Listings',
   description:
-    'This is a timer that switches between a session countdown, and a break countdown. When each timer completes, a beep sounds, and the next timer begins. It passes all of the user stories required by the FreeCodeCamp "Front-end Libraries" certification.',
-  goal: 'To create a simple application using ReactJS',
-  tech: 'CSS, JavaScript, React, NPM',
-  demo: 'https://seidelmatt.com/react-timer/',
-  gitHub: 'https://github.com/mseidel819/react-timer',
+    "This is a solution to the Job listings with filtering challenge on Frontend Mentor. Users should be able to view the optimal layout for the site depending on their device's screen size, see hover states for all interactive elements on the page, and filter job listings based on the categories",
+  goal: 'To create a functional web app from strict design parameters using React and Material UI.',
+  tech: 'CSS, JavaScript, React, Material UI, Emotion',
+  demo: 'https://astonishing-bavarois-d35327.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/static-job-listings',
+
+
+
 };
 
 const project5 = {
-  img: 'img/bankistApp.webp',
-  title: 'Bankist App',
+  img: 'img/tip-calc-ss.webp',
+  title: 'Tip Calculator',
   description:
-    "This was a project from 'The Complete JavaScript Course 2022: From Zero to Expert!' on Udemy.com. This project allows a user to input a username and pin number in order to access their banking information. once logged in, you can request a deposit, withdrawal, or transfer from another users account.",
-  goal: 'To learn about DOM manipulation, numbers, dates, internationalization, and setting timeouts.',
-  tech: "HTML and CSS were provided. The Javascript files were created as a part of 'The Complete JavaScript Course 2022: From Zero to Expert' on Udemy.com",
-  demo: 'https://seidelmatt.com/Bankist_App/',
-  gitHub: 'https://github.com/mseidel819/Bankist_App',
+    "This is a solution to the Tip calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, and calculate the correct tip and total cost of the bill per person",
+  goal: 'To create a functional web app from strict design parameters using React and Material UI.',
+  tech: 'CSS, JavaScript, React, Material UI, Emotion',
+  demo: 'https://chipper-faun-a37757.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/tip-calculator',
 };
 
 const project6 = {
