@@ -101,14 +101,14 @@ const project2 = {
 };
 
 const project3 = {
-  img: 'img/forkify.webp',
-  title: 'Forkify App',
+  img: 'img/githubScreenshot.webp',
+  title: 'GitHub Search App',
   description:
-    "This was the capstone project from 'The Complete JavaScript Course 2022: From Zero to Expert!'. This project accesses a recipe API in order to search for and display recipes based on certain search criteria.",
-  goal: 'To learn the ins-and-outs of creating a real-world JavaScript project, like accessing APIs, project planning, MVC architecture, pagination, accessing local storage, and error handling.',
-  tech: "HTML and CSS were provided. The Javascript files were created as a part of 'The Complete JavaScript Course 2022: From Zero to Expert' on Udemy.com",
-  demo: 'https://seidelmatt.com/forkify_app/',
-  gitHub: 'https://github.com/mseidel819/forkify_app',
+    "This is a solution to the GitHub user search app challenge on Frontend Mentor. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, search for GitHub users by their username, see relevant user information based on their search, and switch between light and dark themes",
+  goal: 'To create a functional web app that accesses the GitHub API from strict design parameters using React and Material UI.',
+  tech: 'JavaScript, React, Material UI, Emotion, API',
+  demo: 'https://chimerical-frangipane-1137e5.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/github-user-search-app',
 };
 
 const project4 = {
