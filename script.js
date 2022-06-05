@@ -117,12 +117,9 @@ const project4 = {
   description:
     "This is a solution to the Job listings with filtering challenge on Frontend Mentor. Users should be able to view the optimal layout for the site depending on their device's screen size, see hover states for all interactive elements on the page, and filter job listings based on the categories",
   goal: 'To create a functional web app from strict design parameters using React and Material UI.',
-  tech: 'CSS, JavaScript, React, Material UI, Emotion',
+  tech: 'JavaScript, React, Material UI, Emotion',
   demo: 'https://astonishing-bavarois-d35327.netlify.app/',
   gitHub: 'https://github.com/mseidel819/static-job-listings',
-
-
-
 };
 
 const project5 = {
@@ -131,7 +128,7 @@ const project5 = {
   description:
     "This is a solution to the Tip calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, and calculate the correct tip and total cost of the bill per person",
   goal: 'To create a functional web app from strict design parameters using React and Material UI.',
-  tech: 'CSS, JavaScript, React, Material UI, Emotion',
+  tech: 'JavaScript, React, Material UI, Emotion',
   demo: 'https://chipper-faun-a37757.netlify.app/',
   gitHub: 'https://github.com/mseidel819/tip-calculator',
 };
