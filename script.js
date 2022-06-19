@@ -134,14 +134,14 @@ const project5 = {
 };
 
 const project6 = {
-  img: 'img/calculator.webp',
-  title: 'React Calculator',
+  img: 'img/comments-redux.webp',
+  title: 'Interactive Comments Section',
   description:
-    'This is your everyday, simple calculator. It passes all of the user stories required by the FreeCodeCamp "Front-end Libraries" certification.',
-  goal: 'To create a simple application using ReactJS',
-  tech: 'CSS, JavaScript, React',
-  demo: 'https://seidelmatt.com/react-calculator/',
-  gitHub: 'https://github.com/mseidel819/react-calculator',
+    "This is a solution to the interactive comments section challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, Create, Read, Update, and Delete comments and replies, Upvote and downvote comments, and use localStorage to save the current state in the browser that persists when the browser is refreshed.",
+  goal: 'To create a functional web app from strict design parameters using React, Material UI, and Redux.',
+  tech: 'Material Ui, JavaScript, React, Redux, React-Redux, Redux-Persist, Redux-Logger, and Reselect',
+  demo: 'https://tranquil-capybara-a9a135.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/comments-section-redux',
 };
 // console.log(projectNav);
 
