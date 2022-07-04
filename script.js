@@ -123,19 +123,19 @@ const project4 = {
 };
 
 const project5 = {
-  img: 'img/tip-calc-ss.webp',
-  title: 'Tip Calculator',
+  img: 'img/calc-react.webp',
+  title: ' Calculator w/ Redux and themes',
   description:
-    "This is a solution to the Tip calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, and calculate the correct tip and total cost of the bill per person",
-  goal: 'To create a functional web app from strict design parameters using React and Material UI.',
-  tech: 'JavaScript, React, Material UI, Emotion',
-  demo: 'https://chipper-faun-a37757.netlify.app/',
-  gitHub: 'https://github.com/mseidel819/tip-calculator',
+    "This is a solution to the calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, perform mathmatical operations like addition, subtraction, multiplication, and division, and adjust the color theme based on their preference",
+  goal: 'To create a functional web app from strict design parameters using React, Redux, and Material UI.',
+  tech: 'JavaScript, React, Redux, Material UI, Emotion for styling',
+  demo: 'https://statuesque-pastelito-391c96.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/calculator-redux',
 };
 
 const project6 = {
   img: 'img/comments-redux.webp',
-  title: 'Interactive Comments Section',
+  title: 'Comments Section w/ Redux',
   description:
     "This is a solution to the interactive comments section challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, Create, Read, Update, and Delete comments and replies, Upvote and downvote comments, and use localStorage to save the current state in the browser that persists when the browser is refreshed.",
   goal: 'To create a functional web app from strict design parameters using React, Material UI, and Redux.',
