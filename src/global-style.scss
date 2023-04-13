@@ -3,8 +3,8 @@
 :root {
   --c-black: #151515;
   --c-gray: #242424;
-  --c-gray-light: #d9d9d9;
-  --c-white: #ffffff;
+  --c-gray-light: #b3b3b3;
+  --c-white: #e6e6e6;
   --c-green: #4ee1a0;
   --c-error: #ff6f5b;
 }
@@ -22,7 +22,11 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: var(--c-white);
   margin: 0 auto;
+}
+
+main {
   max-width: 1110px;
+  margin: 0 auto;
 }
 
 .form {
@@ -34,6 +38,7 @@ body {
   --input-hovered-color: rgba(78, 225, 160, 0.05);
   position: relative;
   width: var(--width-of-input);
+  margin-bottom: 30px;
 }
 /* styling of Input */
 .input {
@@ -65,20 +70,24 @@ body {
 // }
 
 /* Hover on Input */
-input:hover {
+input:hover,
+textarea:hover {
   background: var(--input-hovered-color);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 /* here is code of animated border */
-input:focus ~ .input-border {
+input:focus ~ .input-border,
+textarea:focus ~ .input-border {
   width: 100%;
 }
 
 .btn {
   text-decoration: none;
+  border: none;
   border-bottom: 2px solid var(--c-green);
   color: var(--c-white);
   padding: 10px 4px;
@@ -89,6 +98,7 @@ input:focus ~ .input-border {
   background: transparent;
   position: relative;
   transition: 0.5s ease;
+  z-index: 0;
 
   &:hover {
     // color: var(--c-green);
