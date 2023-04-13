@@ -1,0 +1,36 @@
+@use './breakpoints' as *;
+
+.header {
+  padding: 20px 0px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to('small') {
+    flex-direction: row;
+    padding: 39px 30px;
+  }
+  @include respond-to('large') {
+    flex-direction: row;
+    padding: 39px 0px;
+  }
+
+  .nav-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+  }
+  .nav-link {
+    height: 24px;
+    width: 24px;
+  }
+}

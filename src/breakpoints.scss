@@ -1,7 +1,7 @@
 $breakpoints: (
   'small': 40rem,
   'medium': 55rem,
-  'large': 70rem,
+  'large': 75rem,
 ) !default;
 
 @mixin respond-to($breakpoint) {
