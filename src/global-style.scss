@@ -84,10 +84,49 @@ input:focus ~ .input-border {
   padding: 10px 4px;
   display: inline-block;
   transition: all 0.1s;
+  cursor: pointer;
+
+  background: transparent;
+  position: relative;
+  transition: 0.5s ease;
 
   &:hover {
-    color: var(--c-green);
+    // color: var(--c-green);
+    color: #1e1e2b;
+    transition-delay: 0.5s;
   }
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--c-green);
+  transition: 0.5s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--c-green);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }
 
 .header-1 {
