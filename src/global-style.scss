@@ -1,0 +1,15 @@
+@use './breakpoints' as *;
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Space+Grotesk:wght@500;700&display=swap');
+:host {
+  --c-black: #151515;
+  --c-gray: #242424;
+  --c-gray-light: #d9d9d9;
+  --c-white: #ffffff;
+  --c-green: #4ee1a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

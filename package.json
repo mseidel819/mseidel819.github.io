@@ -1,0 +1,21 @@
+{
+  "author": "Matt Seidel",
+  "description": "Portfolio page",
+  "version": "1.0.0",
+  "keywords": [],
+  "name": "portfolio",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "format": "npx prettier --write ."
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.8.3",
+    "prettier": "2.7"
+  }
+}
