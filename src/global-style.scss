@@ -38,13 +38,19 @@ main {
   --input-hovered-color: rgba(78, 225, 160, 0.05);
   position: relative;
   width: var(--width-of-input);
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+
+  &:first-of-type {
+    margin-top: 0px;
+  }
 }
+
 /* styling of Input */
 .input {
   color: var(--c-white);
   font-size: 16px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: 'Space Grotesk', sans-serif;
   background-color: transparent;
   width: 100%;
@@ -65,9 +71,9 @@ main {
   transition: 0.3s;
 }
 
-// .input-error {
-//   border-bottom: var(--border-height) solid var(--border-error-color);
-// }
+.textarea-border {
+  bottom: 4px;
+}
 
 /* Hover on Input */
 input:hover,
@@ -101,8 +107,8 @@ textarea:focus ~ .input-border {
   z-index: 0;
 
   &:hover {
-    // color: var(--c-green);
-    color: #1e1e2b;
+    color: var(--c-black);
+    // color: #1e1e2b;
     transition-delay: 0.5s;
   }
 }
@@ -138,6 +144,9 @@ textarea:focus ~ .input-border {
   transition-delay: 0.4s;
   color: aliceblue;
 }
+.submit-btn {
+  margin-top: 28px;
+}
 
 .header-1 {
   font-weight: 700;
@@ -168,4 +177,11 @@ textarea:focus ~ .input-border {
   font-size: 18px;
   line-height: 28px;
   color: var(--c-gray-light);
+}
+
+.error-text {
+  text-align: end;
+  color: var(--c-error);
+  font-size: 12px;
+  margin-bottom: -6px;
 }

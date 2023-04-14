@@ -178,7 +178,7 @@
     // height: 500px;
     width: 540px;
     margin-bottom: 20px;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.2s;
     // background-color: #000000;
     opacity: 0;
@@ -204,7 +204,8 @@
   &::before {
     content: url('./img/svg/3dRing.svg');
     position: absolute;
-    bottom: 10%;
+    top: 340px;
+    // bottom: 10%;
     left: 3%;
   }
 

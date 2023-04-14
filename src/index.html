@@ -26,6 +26,7 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script type="module" src="script.js" defer></script>
     <title>Matt Seidel: Front-end Developer</title>
@@ -96,37 +97,50 @@
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
-        <div class="contact-form">
+        <div>
           <!-- Facy Form code -->
-          <div class="form">
-            <input
-              class="input"
-              placeholder="Name"
-              required="true"
-              type="text"
-            />
-            <span class="input-border"></span>
-          </div>
-          <div class="form">
-            <input
-              class="input"
-              placeholder="Email"
-              required="true"
-              type="text"
-            />
-            <span class="input-border"></span>
-          </div>
-          <div class="form">
-            <textarea
-              rows="5"
-              class="input"
-              placeholder="Message"
-              required="true"
-              type="text"
-            ></textarea>
-            <span class="input-border"></span>
-          </div>
-          <button class="btn">Send Message</button>
+          <form id="contact-form" class="contact-form">
+            <div class="form">
+              <input
+                class="input"
+                placeholder="Name"
+                required
+                type="text"
+                id="Name"
+                name="Name"
+              />
+              <span class="input-border"></span>
+            </div>
+            <div class="error-text-container"></div>
+            <div class="form">
+              <input
+                class="input"
+                placeholder="Email"
+                required
+                type="email"
+                id="Email"
+                name="Email"
+              />
+              <span class="input-border"></span>
+            </div>
+            <div class="error-text-container"></div>
+            <div class="form">
+              <textarea
+                rows="5"
+                class="input"
+                placeholder="Message"
+                required="true"
+                type="text"
+                id="Message"
+                name="Message"
+              ></textarea>
+              <span class="input-border textarea-border"></span>
+            </div>
+            <div class="error-text-container"></div>
+            <button id="submit" type="submit" class="btn submit-btn">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>

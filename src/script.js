@@ -1,5 +1,6 @@
 'use strict';
 import { projectData, skillsArr, softSkillsArr } from './project-data';
+import { auth, authURL, token } from '../config.js';
 
 //adding skills
 const techSkillContainer = document.querySelector('.tech-skills-container');
@@ -50,6 +51,79 @@ projectData.forEach(project => {
     </div>
     `
   );
+});
+
+//contact form
+const contactForm = document.getElementById('contact-form');
+const submitButton = document.getElementById('submit');
+
+const myHeaders = new Headers();
+myHeaders.append('Authorization', `Bearer ${auth}`);
+myHeaders.append('Content-Type', 'application/json');
+
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  var data = {
+    fields: {
+      Name: document.getElementById('Name').value,
+      Email: document.getElementById('Email').value,
+      Message: document.getElementById('Message').value,
+      Status: 'To do',
+    },
+  };
+  const raw = JSON.stringify(data);
+
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow',
+  };
+
+  fetch(`${authURL}`, requestOptions)
+    .then(response => response.text())
+    .then(result => console.log('Form Submitted'))
+    .catch(error => console.log('error', error));
+
+  document.getElementById('Name').value = '';
+  document.getElementById('Email').value = '';
+  document.getElementById('Message').value = '';
+
+  submitButton.innerText = 'Message Sent!';
+
+  submitButton.style.background = 'var(--c-green)';
+  submitButton.style.color = 'var(--c-black)';
+
+  // submitButton.style.transitionDelay = '1s';
+
+  setTimeout(() => {
+    submitButton.innerText = 'Send Message';
+    submitButton.style.background = 'transparent';
+    submitButton.style.color = 'var(--c-white)';
+  }, 3000);
+});
+
+//error state
+const inputs = document.querySelectorAll('.input');
+const errorContainer = document.querySelectorAll('.error-text-container');
+
+submitButton.addEventListener('click', e => {
+  e.preventDefault();
+  inputs.forEach((input, i) => {
+    if (!input.checkValidity()) {
+      errorContainer[i].innerHTML = '';
+      input.style.borderBottom = 'var(--border-height) solid var(--c-error)';
+      errorContainer[i].insertAdjacentHTML(
+        'afterbegin',
+        `
+      <p class="body-1 error-text">Sorry, invalid format here</p>
+      `
+      );
+    } else {
+      input.style.borderBottom = 'var(--border-height) solid var(--c-green)';
+      errorContainer[i].innerHTML = '';
+    }
+  });
 });
 
 //smooth scroll
