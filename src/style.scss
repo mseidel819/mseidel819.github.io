@@ -63,27 +63,44 @@
     position: relative;
   }
 
-  // &:before {
-  //   content: url('./img/svg/3dRing.svg');
-  //   // overflow: visible;
-  //   position: absolute;
-  //   top: 2%;
-  //   left: -67%;
-  //   // width: 600px;
+  &:before {
+    content: url('./img/svg/3dRing.svg');
+    // overflow: visible;
+    position: absolute;
+    top: -2%;
+    left: -390px;
 
-  //   @include respond-to('medium') {
-  //     top: 2%;
-  //     left: -23%;
-  //   }
-  // }
+    @include respond-to('medium') {
+      top: 2%;
+      left: -274px;
+    }
+  }
 
-  // &:after {
-  //   content: url('./img/svg/Oval.svg');
-  //   // overflow: visible;
-  //   position: absolute;
-  //   bottom: 5%;
-  //   right: 381px;
-  // }
+  &:after {
+    content: url('./img/svg/half-oval.svg');
+    // overflow: visible;
+    position: absolute;
+    top: 34%;
+    right: -0px;
+    // display: none;
+
+    @include respond-to('small') {
+      content: url('./img/svg/Oval.svg');
+
+      top: 65%;
+      // display: block;
+      right: 152px;
+      opacity: 1;
+    }
+
+    @include respond-to('medium') {
+      top: 70%;
+      display: block;
+      right: 381px;
+      opacity: 1;
+    }
+  }
+
   .hero-img-container {
     display: flex;
     justify-content: end;
@@ -112,8 +129,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 46px;
 
     @include respond-to('small') {
+      margin-top: 0px;
+
       display: block;
       position: absolute;
       top: 10%;
@@ -156,14 +176,29 @@
     text-align: start;
   }
 
-  // &:after {
-  //   content: url('./img/svg/3dRing.svg');
-  //   position: absolute;
-  //   bottom: 28%;
-  //   right: -23%;
-  //   // right: -255px;
-  //   // width: 600px;
-  // }
+  &:after {
+    content: url('./img/svg/half-circle.svg');
+    position: absolute;
+    bottom: -9%;
+    right: -2px;
+    // right: -255px;
+    width: 300px;
+
+    @include respond-to('small') {
+      bottom: 12%;
+    }
+    @include respond-to('medium') {
+      bottom: -18%;
+      // right: 0;
+    }
+    @include respond-to('large') {
+      content: url('./img/svg/3dRing.svg');
+      // content: url('./img/svg/half-circle.svg');
+
+      bottom: 33%;
+      left: 64%;
+    }
+  }
 
   .tech-skills-container {
     display: flex;
@@ -362,12 +397,21 @@
       gap: 0;
     }
 
-    // &::before {
-    //   content: url('./img/svg/3dRing.svg');
-    //   position: absolute;
-    //   top: 255px;
-    //   left: -23%;
-    // }
+    &::before {
+      content: url('./img/svg/3dRing.svg');
+      position: absolute;
+      bottom: 2px;
+      left: -400px;
+
+      @include respond-to('small') {
+        bottom: -78px;
+        left: -300px;
+      }
+      @include respond-to('medium') {
+        top: 255px;
+        left: -257px;
+      }
+    }
   }
 }
 
