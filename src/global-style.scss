@@ -150,20 +150,31 @@ textarea:focus ~ .input-border {
 
 .header-1 {
   font-weight: 700;
-  font-size: 88px;
+  font-size: 40px;
   line-height: 88px;
   /* identical to box height, or 100% */
 
   letter-spacing: -2.5px;
+
+  @include respond-to('medium') {
+    font-size: 72px;
+  }
+  @include respond-to('large') {
+    font-size: 88px;
+  }
 }
 
 .header-2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 56px;
   /* identical to box height, or 117% */
 
   letter-spacing: -1.5px;
+
+  @include respond-to('small') {
+    font-size: 48px;
+  }
 }
 
 .header-3 {
@@ -174,9 +185,13 @@ textarea:focus ~ .input-border {
 
 .body-1 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   color: var(--c-gray-light);
+
+  @include respond-to('small') {
+    font-size: 18px;
+  }
 }
 
 .error-text {

@@ -95,14 +95,14 @@
   border-top: 1px solid var(--c-white);
   position: relative;
 
-  &:after {
-    content: url('./img/svg/3dRing.svg');
-    // overflow: visible;
-    position: absolute;
-    bottom: 28%;
-    right: -23%;
-    // width: 600px;
-  }
+  // &:after {
+  //   content: url('./img/svg/3dRing.svg');
+  //   position: absolute;
+  //   bottom: 28%;
+  //   right: -23%;
+  //   // right: -255px;
+  //   // width: 600px;
+  // }
 
   .tech-skills-container {
     display: flex;
@@ -199,15 +199,6 @@
   background-color: var(--c-gray);
   padding: 84px 0px 92px 0px;
   // z-index: 1;
-  position: relative;
-
-  &::before {
-    content: url('./img/svg/3dRing.svg');
-    position: absolute;
-    top: 340px;
-    // bottom: 10%;
-    left: 3%;
-  }
 
   .contact-p {
     max-width: 445px;
@@ -224,6 +215,14 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: url('./img/svg/3dRing.svg');
+      position: absolute;
+      top: 255px;
+      left: -23%;
+    }
   }
 }
 
