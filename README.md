@@ -7,4 +7,6 @@ lazy load img
 link icons hover color
 transitions and animations?
 mobile responsiveness
-lighthouse
+
+- add back circles
+  lighthouse
