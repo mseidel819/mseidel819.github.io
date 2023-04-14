@@ -37,9 +37,13 @@
   .nav-link {
     height: 24px;
     width: 24px;
-    transition: all 0.1s;
+    transition: transform 0.2s;
+
     &:hover {
       transform: scale(1.1);
+
+      filter: brightness(0) saturate(100%) invert(100%) sepia(26%)
+        saturate(4586%) hue-rotate(70deg) brightness(94%) contrast(89%);
     }
   }
 }
@@ -396,9 +400,12 @@
     height: 24px;
     width: 24px;
 
-    transition: all 0.1s;
+    transition: transform 0.1s;
+
     &:hover {
       transform: scale(1.1);
+      filter: brightness(0) saturate(100%) invert(100%) sepia(26%)
+        saturate(4586%) hue-rotate(70deg) brightness(94%) contrast(89%);
     }
   }
 }
