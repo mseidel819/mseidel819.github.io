@@ -317,6 +317,13 @@
   padding: 84px 0px 92px 0px;
   // z-index: 1;
 
+  .contact-text {
+    text-align: center;
+
+    @include respond-to('medium') {
+      text-align: left;
+    }
+  }
   .contact-p {
     max-width: 445px;
     margin-top: 36px;
@@ -325,21 +332,38 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    width: 100%;
+    max-width: 445px;
   }
 
   .contact-container {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 24px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     position: relative;
+    align-items: center;
+    gap: 48px;
 
-    &::before {
-      content: url('./img/svg/3dRing.svg');
-      position: absolute;
-      top: 255px;
-      left: -23%;
+    @include respond-to('medium') {
+      flex-direction: row;
+      align-items: start;
+      gap: 24px;
     }
+    @include respond-to('large') {
+      flex-direction: row;
+      align-items: start;
+      gap: 0;
+    }
+
+    // &::before {
+    //   content: url('./img/svg/3dRing.svg');
+    //   position: absolute;
+    //   top: 255px;
+    //   left: -23%;
+    // }
   }
 }
 

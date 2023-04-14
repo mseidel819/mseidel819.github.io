@@ -37,7 +37,8 @@ main {
   --border-error-color: var(--c-error);
   --input-hovered-color: rgba(78, 225, 160, 0.05);
   position: relative;
-  width: var(--width-of-input);
+  // width: var(--width-of-input);
+  width: 100%;
   margin-bottom: 0px;
   margin-top: 30px;
 
