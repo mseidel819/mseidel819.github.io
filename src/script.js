@@ -129,5 +129,14 @@ submitButton.addEventListener('click', e => {
 });
 
 //smooth scroll
+const button = document.querySelectorAll('.btn');
+
+button.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    let id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
 //img lazy load
