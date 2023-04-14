@@ -32,7 +32,9 @@ projectData.forEach(project => {
     'beforeend',
     `
     <div class="project-clump">
-    <img class="project-img" src="${project.img}" alt=""/> 
+    <div class='img-div'>
+   <img class="project-img" src="${project.img}" alt=""/> 
+   </div>
     <div class="project-hover-area">
     ${
       project.gitHub
