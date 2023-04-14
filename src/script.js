@@ -1,6 +1,6 @@
 'use strict';
 import { projectData, skillsArr, softSkillsArr } from './project-data';
-import { auth, authURL, token } from '../config.js';
+import { auth, authURL } from './config.js';
 
 //adding skills
 const techSkillContainer = document.querySelector('.tech-skills-container');
@@ -55,10 +55,12 @@ projectData.forEach(project => {
   );
 });
 
-//contact form
+const inputs = document.querySelectorAll('.input');
+const errorContainer = document.querySelectorAll('.error-text-container');
 const contactForm = document.getElementById('contact-form');
 const submitButton = document.getElementById('submit');
 
+//contact form
 const myHeaders = new Headers();
 myHeaders.append('Authorization', `Bearer ${auth}`);
 myHeaders.append('Content-Type', 'application/json');
@@ -96,8 +98,6 @@ contactForm.addEventListener('submit', function (event) {
   submitButton.style.background = 'var(--c-green)';
   submitButton.style.color = 'var(--c-black)';
 
-  // submitButton.style.transitionDelay = '1s';
-
   setTimeout(() => {
     submitButton.innerText = 'Send Message';
     submitButton.style.background = 'transparent';
@@ -106,11 +106,7 @@ contactForm.addEventListener('submit', function (event) {
 });
 
 //error state
-const inputs = document.querySelectorAll('.input');
-const errorContainer = document.querySelectorAll('.error-text-container');
-
 submitButton.addEventListener('click', e => {
-  e.preventDefault();
   inputs.forEach((input, i) => {
     if (!input.checkValidity()) {
       errorContainer[i].innerHTML = '';
@@ -129,7 +125,7 @@ submitButton.addEventListener('click', e => {
 });
 
 //smooth scroll
-const button = document.querySelectorAll('.btn');
+const button = document.querySelectorAll('.btn-link');
 
 button.forEach(link => {
   link.addEventListener('click', e => {
