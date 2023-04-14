@@ -1,6 +1,7 @@
 'use strict';
 import { projectData, skillsArr, softSkillsArr } from './project-data';
 
+//adding skills
 const techSkillContainer = document.querySelector('.tech-skills-container');
 const softSkillContainer = document.querySelector('.soft-skills-container');
 
@@ -22,6 +23,7 @@ softSkillsArr.forEach(skill => {
   );
 });
 
+//adding projects
 const projectsContainer = document.querySelector('.projects-container');
 
 projectData.forEach(project => {
@@ -29,7 +31,16 @@ projectData.forEach(project => {
     'beforeend',
     `
     <div class="project-clump">
-        <img class="project-img" src="" alt=""/>
+    <img class="project-img" src="${project.img}" alt=""/> 
+    <div class="project-hover-area">
+    ${
+      project.gitHub
+        ? `<a target="_blank" class="btn" href="${project.demo}">View Project</a> <a target="_blank"  class="btn" href="${project.gitHub}">View Code</a>`
+        : `<a target="_blank"  class="btn" href="${project.demo}">View Project</a>`
+    }
+  
+  
+        </div>
         <h3 class="header-3">${project.title}</h3>
         <div class="tech-container">
             ${project.tech
@@ -40,3 +51,7 @@ projectData.forEach(project => {
     `
   );
 });
+
+//smooth scroll
+
+//img lazy load

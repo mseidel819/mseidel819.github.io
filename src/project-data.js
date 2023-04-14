@@ -1,6 +1,6 @@
 const project1 = {
-  img: '',
-  title: 'Tech2Live',
+  img: require('./img/t2l.png'),
+  title: 'Tech2Live: Empower through technology',
   description:
     'Tech2Live is an early stage volunteer startup in the Tech-for-Good space. Our goal is to create a platform to financially aid survivors of domestic and sexual violence through the support of donors.',
   tech: ['HTML', 'CSS', 'Sass', 'JavaScript'],
@@ -8,7 +8,7 @@ const project1 = {
 };
 
 const project2 = {
-  img: 'img/comments-redux.webp',
+  img: require('./img/comments-redux.webp'),
   title: 'Comments Section w/ Redux',
   description:
     "This is a solution to the interactive comments section challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, Create, Read, Update, and Delete comments and replies, Upvote and downvote comments, and use localStorage to save the current state in the browser that persists when the browser is refreshed.",
@@ -19,7 +19,7 @@ const project2 = {
 };
 
 const project3 = {
-  img: 'img/pet_adopter.webp',
+  img: require('./img/pet_adopter.webp'),
   title: 'Dog Finder',
   description:
     'The Dog-Finder app accesses the Petfinder API in order to search for adoptable dogs within 10 miles of an entered location. After selecting a dog, its info/details, as well as the organization caring for it, are rendered dynamically. This project also uses MVC architecture.',
@@ -41,7 +41,7 @@ const project3 = {
 // };
 
 const project4 = {
-  img: 'img/githubScreenshot.webp',
+  img: require('./img/githubScreenshot.webp'),
   title: 'GitHub Search App',
   description:
     "This is a solution to the GitHub user search app challenge on Frontend Mentor. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, search for GitHub users by their username, see relevant user information based on their search, and switch between light and dark themes",
@@ -52,7 +52,7 @@ const project4 = {
 };
 
 const project5 = {
-  img: 'img/job-listing-ss.webp',
+  img: require('./img/job-listing-ss.webp'),
   title: 'Static Job Listings',
   description:
     "This is a solution to the Job listings with filtering challenge on Frontend Mentor. Users should be able to view the optimal layout for the site depending on their device's screen size, see hover states for all interactive elements on the page, and filter job listings based on the categories",
@@ -63,7 +63,7 @@ const project5 = {
 };
 
 const project6 = {
-  img: 'img/calc-react.webp',
+  img: require('./img/calc-react.webp'),
   title: ' Calculator w/ Redux and themes',
   description:
     "This is a solution to the calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, perform mathmatical operations like addition, subtraction, multiplication, and division, and adjust the color theme based on their preference",

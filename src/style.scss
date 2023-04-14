@@ -153,10 +153,15 @@
   .project-clump {
     // width: 50%;
     margin-bottom: 69px;
+    position: relative;
+    // z-index: 1;
   }
   .project-img {
+    position: absolute;
     height: 400px;
     width: 540px;
+    object-fit: cover;
+    z-index: -1;
   }
   .tech-container {
     display: flex;
@@ -167,12 +172,41 @@
     text-transform: uppercase;
     margin-top: 7px;
   }
+
+  .project-hover-area {
+    height: 400px;
+    // height: 500px;
+    width: 540px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    // background-color: #000000;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      opacity: 1;
+    }
+  }
 }
 
 .contact {
   background-color: var(--c-gray);
   padding: 84px 0px 92px 0px;
-  z-index: -1;
+  // z-index: 1;
+  position: relative;
+
+  &::before {
+    content: url('./img/svg/3dRing.svg');
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+  }
 
   .contact-p {
     max-width: 445px;
