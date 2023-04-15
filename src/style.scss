@@ -20,12 +20,12 @@
   .nav-logo {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.444444px;
 
     @include respond-to('small') {
-      font-size: 24px;
+      font-size: 32px;
     }
   }
 
