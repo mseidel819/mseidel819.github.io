@@ -27,7 +27,7 @@ const project3 = {
   description:
     'The Dog-Finder app accesses the Petfinder API in order to search for adoptable dogs within 10 miles of an entered location. After selecting a dog, its info/details, as well as the organization caring for it, are rendered dynamically. This project also uses MVC architecture.',
   goal: "The goal of this project was to create a page from scratch based off of the skills learned from completing both 'The Complete JavaScript Course 2022: From Zero to Expert!', and 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com.",
-  tech: ['JavaScript', 'HTML', 'CSS'],
+  tech: ['JavaScript', 'HTML', 'CSS', 'RESTApi'],
   demo: 'https://startling-mochi-d0adad.netlify.app/',
   gitHub: 'https://github.com/mseidel819/pet_adopter',
 };
