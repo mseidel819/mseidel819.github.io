@@ -93,6 +93,12 @@ textarea:focus ~ .input-border {
 }
 
 /* Change the white to any color */
+
+input:autofill {
+  box-shadow: 0 0 0 30px var(--c-gray) inset !important;
+  color: var(--c-white) !important;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
