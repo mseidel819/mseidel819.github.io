@@ -121,7 +121,7 @@ submitButton.addEventListener('click', e => {
       `
       );
     } else {
-      input.style.borderBottom = 'var(--border-height) solid var(--c-green)';
+      input.style.borderBottom = 'var(--border-height) solid var(--c-white)';
       errorContainer[i].innerHTML = '';
     }
   });
