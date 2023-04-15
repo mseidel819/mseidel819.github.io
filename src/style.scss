@@ -113,7 +113,7 @@
     }
   }
   .hero-img {
-    filter: grayscale(100%);
+    filter: blur(20px) grayscale(100%);
     height: 383px;
     width: 210px;
     object-fit: cover;

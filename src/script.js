@@ -1,6 +1,7 @@
 'use strict';
 import { projectData, skillsArr, softSkillsArr } from './project-data';
-import { auth, authURL } from './config.js';
+import { auth, authURL } from './js/config.js';
+import { lazyLoad } from './js/lazy-load';
 
 //adding skills
 const techSkillContainer = document.querySelector('.tech-skills-container');
@@ -33,7 +34,9 @@ projectData.forEach(project => {
     `
     <div class="project-clump">
     <div class='img-div'>
-   <img class="project-img" src="${project.img}" alt=""/> 
+   <img class="project-img lazy-img" src="${project.imgLazy}" data-src="${
+      project.img
+    }" alt="${project.title}"/> 
    </div>
     <div class="project-hover-area">
     ${
@@ -136,3 +139,8 @@ button.forEach(link => {
 });
 
 //img lazy load
+document
+  .getElementById('hero-img')
+  .setAttribute('data-src', require('./img/portfolio1.webp'));
+
+lazyLoad();
