@@ -117,7 +117,8 @@
     height: 383px;
     width: 210px;
     object-fit: cover;
-    mask-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%);
+    object-position: top;
+    mask-image: linear-gradient(to top, black 80%, rgba(0, 0, 0, 0) 100%);
 
     @include respond-to('medium') {
       height: 520px;
