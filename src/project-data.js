@@ -15,8 +15,8 @@ const project2 = {
   description: '',
   goal: '',
   tech: ['TypeScript', 'NextJs', 'React'],
-  demo: 'https://tranquil-capybara-a9a135.netlify.app/',
-  gitHub: 'https://github.com/mseidel819/comments-section-redux',
+  demo: 'https://splendid-pegasus-ce4c5e.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/planet-facts',
 };
 
 const project3 = {
