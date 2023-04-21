@@ -5,7 +5,7 @@ const project1 = {
   description:
     'Tech2Live is an early stage volunteer startup in the Tech-for-Good space. Our goal is to create a platform to financially aid survivors of domestic and sexual violence through the support of donors.',
   tech: ['JavaScript', 'HTML', 'Sass'],
-  demo: 'https://tech2live.netlify.app/',
+  demo: 'https://tech2live.org/',
 };
 
 const project2 = {
