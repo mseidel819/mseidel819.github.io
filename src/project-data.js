@@ -1,11 +1,12 @@
 const project1 = {
-  img: require('./img/t2l.png'),
-  imgLazy: require('./img/t2l-lazy.webp'),
-  title: 'Tech2Live: Empower through technology',
-  description:
-    'Tech2Live is an early stage volunteer startup in the Tech-for-Good space. Our goal is to create a platform to financially aid survivors of domestic and sexual violence through the support of donors.',
-  tech: ['JavaScript', 'HTML', 'Sass'],
-  demo: 'https://tech2live.org/',
+  img: require('./img/robo_blogger.webp'),
+  imgLazy: require('./img/robo_blogger-lazy.webp'),
+  title: 'ROBO_BLOGGER',
+  description: '',
+  goal: '',
+  tech: ['NextJs', 'Api', 'Fullstack'],
+  demo: 'https://robo-blog.vercel.app/',
+  gitHub: 'https://github.com/mseidel819/robo-blog',
 };
 
 const project2 = {
@@ -32,6 +33,16 @@ const project3 = {
 };
 
 const project4 = {
+  img: require('./img/t2l.png'),
+  imgLazy: require('./img/t2l-lazy.webp'),
+  title: 'Tech2Live: Empower through technology',
+  description:
+    'Tech2Live is an early stage volunteer startup in the Tech-for-Good space. Our goal is to create a platform to financially aid survivors of domestic and sexual violence through the support of donors.',
+  tech: ['JavaScript', 'HTML', 'Sass'],
+  demo: 'https://tech2live.org/',
+};
+
+const project5 = {
   img: require('./img/comments-redux.webp'),
   imgLazy: require('./img/comments-redux-lazy.webp'),
   title: 'Comments Section w/ Redux',
@@ -43,17 +54,17 @@ const project4 = {
   gitHub: 'https://github.com/mseidel819/comments-section-redux',
 };
 
-const project5 = {
-  img: require('./img/job-listing-ss.webp'),
-  imgLazy: require('./img/job-listing-ss-lazy.webp'),
-  title: 'Static Job Listings',
-  description:
-    "This is a solution to the Job listings with filtering challenge on Frontend Mentor. Users should be able to view the optimal layout for the site depending on their device's screen size, see hover states for all interactive elements on the page, and filter job listings based on the categories",
-  goal: 'To create a functional web app from strict design parameters using React and Material UI.',
-  tech: ['TypeScript', 'React', 'Material UI'],
-  demo: 'https://astonishing-bavarois-d35327.netlify.app/',
-  gitHub: 'https://github.com/mseidel819/static-job-listings',
-};
+// const project5 = {
+//   img: require('./img/job-listing-ss.webp'),
+//   imgLazy: require('./img/job-listing-ss-lazy.webp'),
+//   title: 'Static Job Listings',
+//   description:
+//     "This is a solution to the Job listings with filtering challenge on Frontend Mentor. Users should be able to view the optimal layout for the site depending on their device's screen size, see hover states for all interactive elements on the page, and filter job listings based on the categories",
+//   goal: 'To create a functional web app from strict design parameters using React and Material UI.',
+//   tech: ['TypeScript', 'React', 'Material UI'],
+//   demo: 'https://astonishing-bavarois-d35327.netlify.app/',
+//   gitHub: 'https://github.com/mseidel819/static-job-listings',
+// };
 
 const project6 = {
   img: require('./img/pet_adopter.webp'),
@@ -66,18 +77,6 @@ const project6 = {
   demo: 'https://startling-mochi-d0adad.netlify.app/',
   gitHub: 'https://github.com/mseidel819/pet_adopter',
 };
-
-// const project7 = {
-//   img: require('./img/calc-react.webp'),
-//   imgLazy: require('./img/calc-react-lazy.webp'),
-//   title: 'Calculator w/ Redux and themes',
-//   description:
-//     "This is a solution to the calculator app challenge on Frontend Mentor. Figma files were provided. Users should be able to view the optimal layout for the app depending on their device's screen size, see hover states for all interactive elements on the page, perform mathmatical operations like addition, subtraction, multiplication, and division, and adjust the color theme based on their preference",
-//   goal: 'To create a functional web app from strict design parameters using React, Redux, and Material UI.',
-//   tech: ['JavaScript', 'React', 'Redux', 'Material UI'],
-//   demo: 'https://statuesque-pastelito-391c96.netlify.app/',
-//   gitHub: 'https://github.com/mseidel819/calculator-redux',
-// };
 
 export const projectData = [
   project1,
