@@ -275,7 +275,7 @@
   .projects-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     @include respond-to('small') {
       display: flex;
@@ -338,11 +338,11 @@
 
   .tech-container {
     display: flex;
-    gap: 8px;
+    column-gap: 8px;
     flex-wrap: wrap;
 
     @include respond-to('small') {
-      gap: 24px;
+      column-gap: 24px;
     }
   }
   .tech-item {

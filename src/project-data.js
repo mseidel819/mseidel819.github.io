@@ -4,7 +4,7 @@ const project1 = {
   title: 'ROBO_BLOGGER',
   description: '',
   goal: '',
-  tech: ['NextJs', 'MongoDB', 'Redux', 'next-auth'],
+  tech: ['TypeScript', 'NextJs', 'full stack', 'MongoDB', 'Redux', 'next-auth'],
   demo: 'https://robo-blog.vercel.app/',
   gitHub: 'https://github.com/mseidel819/robo-blog',
 };
