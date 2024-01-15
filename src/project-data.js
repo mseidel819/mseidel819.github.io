@@ -1,4 +1,23 @@
 const project1 = {
+  img: require('./img/recipe-api.png'),
+  imgLazy: require('./img/recipe-api.png'),
+  title: 'Blog Recipe Scraper API',
+  description: '',
+  goal: '',
+  tech: [
+    'Python',
+    'Django',
+    'Django-Rest-Framework',
+    'RestAPI',
+    'Web Scraping',
+    'Docker',
+    'AWS',
+  ],
+  demo: 'http://ec2-18-118-138-187.us-east-2.compute.amazonaws.com/api/docs/',
+  gitHub: 'https://github.com/mseidel819/recipe-app-api',
+};
+
+const project2 = {
   img: require('./img/robo_blogger.webp'),
   imgLazy: require('./img/robo_blogger-lazy.webp'),
   title: 'ROBO_BLOGGER',
@@ -9,7 +28,7 @@ const project1 = {
   gitHub: 'https://github.com/mseidel819/robo-blog',
 };
 
-const project2 = {
+const project3 = {
   img: require('./img/planet-sh.webp'),
   imgLazy: require('./img/planet-sh-lazy.webp'),
   title: 'Planet Facts',
@@ -20,7 +39,7 @@ const project2 = {
   gitHub: 'https://github.com/mseidel819/planet-facts',
 };
 
-const project3 = {
+const project4 = {
   img: require('./img/githubScreenshot.webp'),
   imgLazy: require('./img/githubScreenshot-lazy.webp'),
   title: 'GitHub Search App',
@@ -32,7 +51,7 @@ const project3 = {
   gitHub: 'https://github.com/mseidel819/github-user-search-app',
 };
 
-const project4 = {
+const project5 = {
   img: require('./img/t2l.png'),
   imgLazy: require('./img/t2l-lazy.webp'),
   title: 'Tech2Live: Empower through technology',
@@ -42,7 +61,7 @@ const project4 = {
   demo: 'https://tech2live.org/',
 };
 
-const project5 = {
+const project6 = {
   img: require('./img/comments-redux.webp'),
   imgLazy: require('./img/comments-redux-lazy.webp'),
   title: 'Comments Section w/ Redux',
@@ -66,17 +85,17 @@ const project5 = {
 //   gitHub: 'https://github.com/mseidel819/static-job-listings',
 // };
 
-const project6 = {
-  img: require('./img/pet_adopter.webp'),
-  imgLazy: require('./img/pet_adopter-lazy.webp'),
-  title: 'Dog Finder',
-  description:
-    'The Dog-Finder app accesses the Petfinder API in order to search for adoptable dogs within 10 miles of an entered location. After selecting a dog, its info/details, as well as the organization caring for it, are rendered dynamically. This project also uses MVC architecture.',
-  goal: "The goal of this project was to create a page from scratch based off of the skills learned from completing both 'The Complete JavaScript Course 2022: From Zero to Expert!', and 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com.",
-  tech: ['JavaScript', 'HTML', 'CSS', 'RESTApi'],
-  demo: 'https://startling-mochi-d0adad.netlify.app/',
-  gitHub: 'https://github.com/mseidel819/pet_adopter',
-};
+// const project6 = {
+//   img: require('./img/pet_adopter.webp'),
+//   imgLazy: require('./img/pet_adopter-lazy.webp'),
+//   title: 'Dog Finder',
+//   description:
+//     'The Dog-Finder app accesses the Petfinder API in order to search for adoptable dogs within 10 miles of an entered location. After selecting a dog, its info/details, as well as the organization caring for it, are rendered dynamically. This project also uses MVC architecture.',
+//   goal: "The goal of this project was to create a page from scratch based off of the skills learned from completing both 'The Complete JavaScript Course 2022: From Zero to Expert!', and 'Build Responsive Real-World Websites with HTML and CSS' on Udemy.com.",
+//   tech: ['JavaScript', 'HTML', 'CSS', 'RESTApi'],
+//   demo: 'https://startling-mochi-d0adad.netlify.app/',
+//   gitHub: 'https://github.com/mseidel819/pet_adopter',
+// };
 
 export const projectData = [
   project1,
@@ -88,6 +107,9 @@ export const projectData = [
 ];
 
 export const skillsArr = [
+  'Python',
+  'Django',
+  'Web Scraping',
   'JavaScript',
   'TypeScript',
   'React',
@@ -95,8 +117,10 @@ export const skillsArr = [
   'Svelte',
   'Material-UI',
   'Node.js',
-  'Express',
   'MongoDB',
+  'PostgreSQL',
+  'Docker',
+  'AWS',
 ];
 export const softSkillsArr = [
   'Problem Solving',
