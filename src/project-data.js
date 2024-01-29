@@ -18,12 +18,12 @@ const project1 = {
 };
 
 const project2 = {
-  img: require('./img/robo_blogger.webp'),
-  imgLazy: require('./img/robo_blogger-lazy.webp'),
-  title: 'ROBO_BLOGGER',
+  img: require('./img/junkfreerecipes.png'),
+  imgLazy: require('./img/junkfreerecipes.png'),
+  title: 'Junk Free Recipes',
   description: '',
   goal: '',
-  tech: ['TypeScript', 'NextJs', 'full stack', 'MongoDB', 'Redux', 'next-auth'],
+  tech: ['TypeScript', 'NextJs', 'React Query', 'next-auth', 'JSON web token'],
   demo: 'https://robo-blog.vercel.app/',
   gitHub: 'https://github.com/mseidel819/robo-blog',
 };
