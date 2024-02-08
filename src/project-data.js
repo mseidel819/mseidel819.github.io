@@ -13,7 +13,7 @@ const project1 = {
     'Docker',
     'AWS',
   ],
-  demo: 'http://ec2-18-118-138-187.us-east-2.compute.amazonaws.com/api/docs/',
+  demo: 'https://junkfreerecipes.netlify.app/v1/api/docs/',
   gitHub: 'https://github.com/mseidel819/recipe-app-api',
 };
 
@@ -24,8 +24,8 @@ const project2 = {
   description: '',
   goal: '',
   tech: ['TypeScript', 'NextJs', 'React Query', 'next-auth', 'JSON web token'],
-  demo: 'https://robo-blog.vercel.app/',
-  gitHub: 'https://github.com/mseidel819/robo-blog',
+  demo: 'https://junkfreerecipes.netlify.app/',
+  gitHub: 'https://github.com/mseidel819/recipe-library',
 };
 
 const project3 = {
